@@ -1,0 +1,31 @@
+TaskSegment GitHub integration audit
+====================================
+
+Core base: TSV6
+TSV3-only code added only when the relative path was absent from TSV6.
+TSV4 contribution: visual-token-state exporter and hook in segmentation_model.py.
+
+Five conflict decisions:
+- scripts/predict.py: TSV6
+- scripts/train.py: TSV6
+- tasksegment/checkpoint.py: TSV6
+- tasksegment/training/trainer.py: TSV6
+- tasksegment/models/segmentation_model.py: TSV6 + TSV4 visualization hook
+
+Hard-coded server-path references found: 16
+launch_tasksegment_ablations.py:178: ap.add_argument("--root", default="/tank/wk/TSV3")
+launch_tasksegment_ablations.py:180: ap.add_argument("--text-dir", default="/tank/wk/TSV2/text_features_llm")
+tools/export_image_mask_pyramid.py:139: "/tank/wk/TSV6/paper_artifacts/vis_states/image_mask_pyramid"
+scripts/run_unetpp_seed42_gpu4.sh:4: cd /tank/wk/TSV3
+scripts/run_unetpp_seed42_gpu4.sh:9: RUN_DIR="/tank/wk/TSV3/paper_artifacts/runs/unetpp/seed_42"
+scripts/run_unetpp_seed42_gpu4.sh:28: "${PYTHON_BIN}" -u scripts/train_unetpp.py   --save-path "${CHECKPOINT}"   --data-root /tank/wk/TSV3/data   --device cuda:0   --seed 42   --epochs 150   --batch-size 4   --episodes-per-epoch 1500   --grad-accum-steps 4   --min-lr 1e-6   --weight-decay 1e-4   --warmup-epochs 5   --patience 20   --domain-sampling-alpha 0.0   --threshold 0.5   --cache-dataset   --preload-val-cache   --augmentation   --amp   --deterministic   --val-batch-size 4   --lr 1e-4   --max-grad-norm 5.0   --deep-supervision
+scripts/run_unetpp_seed42_gpu4.sh:38: "${PYTHON_BIN}" -u scripts/predict_baseline.py   --method unetpp   --checkpoint "${CHECKPOINT}"   --data-root /tank/wk/TSV3/data   --output-dir "${PRED_DIR}"   --device cuda:0   --seed 42   --batch-size 4   --threshold 0.5   --amp   --cache-dataset   --preload-cache
+scripts/run_unetpp_seed3407_gpu1.sh:4: cd /tank/wk/TSV3
+scripts/run_unetpp_seed3407_gpu1.sh:10: RUN_DIR="/tank/wk/TSV3/paper_artifacts/runs/unetpp/seed_3407"
+scripts/run_unetpp_seed3407_gpu1.sh:29: "${PYTHON_BIN}" -u scripts/train_unetpp.py   --save-path "${CHECKPOINT}"   --data-root /tank/wk/TSV3/data   --device cuda:0   --seed 3407   --epochs 150   --batch-size 4   --episodes-per-epoch 1500   --grad-accum-steps 4   --min-lr 1e-6   --weight-decay 1e-4   --warmup-epochs 5   --patience 20   --domain-sampling-alpha 0.0   --threshold 0.5   --cache-dataset   --preload-val-cache   --augmentation   --amp   --deterministic   --val-batch-size 4   --lr 1e-4   --max-grad-norm 5.0   --deep-supervision
+scripts/run_unetpp_seed3407_gpu1.sh:39: "${PYTHON_BIN}" -u scripts/predict_baseline.py   --method unetpp   --checkpoint "${CHECKPOINT}"   --data-root /tank/wk/TSV3/data   --output-dir "${PRED_DIR}"   --device cuda:0   --seed 3407   --batch-size 4   --threshold 0.5   --amp   --cache-dataset   --preload-cache
+scripts/run_unet_gpu4.sh:4: cd /tank/wk/TSV3
+scripts/run_unet_gpu4.sh:19: RUN_DIR="/tank/wk/TSV3/paper_artifacts/runs/unet/seed_${SEED}"
+scripts/run_unet_gpu4.sh:40: --data-root /tank/wk/TSV3/data \
+scripts/run_unet_gpu4.sh:70: --data-root /tank/wk/TSV3/data \
+tasksegment/visualization/export_visual_token_states.py:212: "/tank/wk/TSV4/paper_artifacts/figure_exports/visual_task_token_states",

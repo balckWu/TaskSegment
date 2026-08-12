@@ -1,0 +1,8 @@
+{
+  "thyroid": "a thyroid nodule in an ultrasound image",
+  "TN3K": "a thyroid nodule in an ultrasound image",
+  "BUSI_WHU": "a breast lesion in an ultrasound image",
+  "BUS-BRA": "a breast mass in an ultrasound image",
+  "OTU": "an ovarian tumor in an ultrasound image",
+  "prostate": "the prostate gland in an ultrasound image"
+}

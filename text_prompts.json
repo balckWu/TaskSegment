@@ -1,0 +1,104 @@
+{
+  "thyroid": {
+    "target": [
+      "thyroid nodule; focal lesion inside thyroid gland; foreground is the annotated nodule only"
+    ],
+    "appearance": [
+      "solid cystic or mixed thyroid lesion; hypoechoic isoechoic or heterogeneous; calcification may occur"
+    ],
+    "boundary": [
+      "complete thyroid nodule contour; weak blurred lobulated irregular or partly obscured margin"
+    ],
+    "exclusion": [
+      "exclude normal thyroid parenchyma vessels tracheal interface neck muscle speckle shadow and distant dark regions"
+    ],
+    "domain_identity": [
+      "thyroid ultrasound domain named thyroid; thyroid nodule segmentation dataset identity"
+    ]
+  },
+  "TN3K": {
+    "target": [
+      "TN3K thyroid nodule; focal lesion inside thyroid gland; foreground is the annotated nodule only"
+    ],
+    "appearance": [
+      "TN3K thyroid lesion; variable size and echogenicity; solid cystic mixed heterogeneous or calcified components"
+    ],
+    "boundary": [
+      "entire TN3K nodule contour; irregular low-contrast interrupted or artifact-obscured margin"
+    ],
+    "exclusion": [
+      "exclude normal thyroid tissue vessels tracheal interface muscles speckle acoustic shadow and unrelated thyroid regions"
+    ],
+    "domain_identity": [
+      "TN3K thyroid ultrasound domain; TN3K dataset identity; thyroid nodule segmentation"
+    ]
+  },
+  "BUSI_WHU": {
+    "target": [
+      "BUSI_WHU breast lesion; focal breast mass; foreground is the annotated lesion only"
+    ],
+    "appearance": [
+      "breast lesion with hypoechoic heterogeneous solid cystic or mixed internal echoes"
+    ],
+    "boundary": [
+      "complete breast lesion contour; circumscribed irregular microlobulated angular indistinct or shadowed margin"
+    ],
+    "exclusion": [
+      "exclude normal glandular tissue fat skin pectoral structures speckle posterior shadow and distant hypoechoic regions"
+    ],
+    "domain_identity": [
+      "BUSI_WHU breast ultrasound domain; BUSI_WHU dataset identity; breast lesion segmentation"
+    ]
+  },
+  "BUS-BRA": {
+    "target": [
+      "BUS-BRA breast mass; focal abnormal breast region; foreground is the annotated mass only"
+    ],
+    "appearance": [
+      "breast mass with variable echogenicity heterogeneous internal echoes and possible posterior acoustic effects"
+    ],
+    "boundary": [
+      "complete BUS-BRA mass contour; smooth irregular spiculated indistinct or partly obscured margin"
+    ],
+    "exclusion": [
+      "exclude surrounding glandular tissue adipose layers skin pectoral muscle speckle shadow and unrelated dark areas"
+    ],
+    "domain_identity": [
+      "BUS-BRA breast ultrasound domain; BUS-BRA dataset identity; breast mass segmentation"
+    ]
+  },
+  "OTU": {
+    "target": [
+      "OTU ovarian tumor; adnexal pelvic lesion; foreground is the complete annotated tumor region"
+    ],
+    "appearance": [
+      "ovarian tumor with cystic solid or mixed composition; septations papillary projections heterogeneous echoes and fluid compartments"
+    ],
+    "boundary": [
+      "outer ovarian tumor contour; weak contrast irregular wall posterior enhancement or partly missing boundary"
+    ],
+    "exclusion": [
+      "exclude uterus bladder bowel gas normal ovarian tissue extra-lesional fluid labels speckle and distant anechoic regions"
+    ],
+    "domain_identity": [
+      "OTU ovarian tumor ultrasound domain; OTU dataset identity; ovarian tumor segmentation"
+    ]
+  },
+  "prostate": {
+    "target": [
+      "whole prostate gland; compact pelvic organ; foreground is the complete annotated prostate"
+    ],
+    "appearance": [
+      "prostate gland with relatively homogeneous echotexture and compact central pelvic shape"
+    ],
+    "boundary": [
+      "complete prostate capsule; weak anterior and posterior borders with smooth curved lateral margins"
+    ],
+    "exclusion": [
+      "exclude bladder rectal wall pelvic muscles probe artifacts acoustic shadow and surrounding soft tissue"
+    ],
+    "domain_identity": [
+      "prostate ultrasound domain; prostate dataset identity; whole-gland prostate segmentation"
+    ]
+  }
+}
