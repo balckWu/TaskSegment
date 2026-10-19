@@ -1,0 +1,674 @@
+{
+  "audit_date": "2026-10-19",
+  "starting_git_commit": "fcfbf7aee297aca64bbe0e1b2c815279431fe687",
+  "source_archive_sha256": "f266783aa3a1529c5babb36b48b19ce121e6ff18ec4f3d7bc88453d000fe179a",
+  "downloaded_paths": [
+    "iris2d/model.py",
+    "iris2d/project.py",
+    "iris2d/protocol.py",
+    "iris2d/runner.py",
+    "iris2d/__init__.py",
+    "scripts/check_iris2d.py",
+    "scripts/diagnose_iris2d.py",
+    "scripts/launch_iris2d.py",
+    "scripts/predict_iris2d.py",
+    "scripts/preflight_iris2d.py",
+    "scripts/run_iris2d_3seeds.sh",
+    "scripts/summarize_iris2d.py",
+    "scripts/train_iris2d.py",
+    "configs/iris2d_baseline.json",
+    "configs/iris2d_reference.json",
+    "requirements-iris2d.txt",
+    "tasksegment/data/datasets.py",
+    "tasksegment/data/__init__.py"
+  ],
+  "checkpoints": [
+    {
+      "run": "TSV3/paper_artifacts/runs/tasksegment_full2/seed_42/checkpoint.pth",
+      "architecture": "TaskSegment_DomainTextV3",
+      "schema_version": 4,
+      "epoch": 69,
+      "best_val_dice": 0.8770811474417587,
+      "parameter_elements": 66080013,
+      "model_config": {
+        "use_ftext": true,
+        "use_semantic_text": true,
+        "hidden_dim": 1024,
+        "num_query_tokens": 4,
+        "context_upscale": 4,
+        "dropout": 0.1,
+        "text_dim": 1024,
+        "text_group_summary_count": 5,
+        "domain_names": [
+          "thyroid",
+          "TN3K",
+          "BUSI_WHU",
+          "BUS-BRA",
+          "OTU",
+          "prostate"
+        ],
+        "use_domain_embedding": true,
+        "use_group_embedding": true,
+        "domain_embedding_scale_init": 0.5,
+        "group_embedding_scale_init": 0.25,
+        "text_semantic_scale_init": 1.0,
+        "task_norm_type": "group",
+        "group_norm_groups": 16,
+        "encoder_norm_type": "group",
+        "fg_token_weight": 0.3,
+        "skip_gate_mode": "centered",
+        "aggregate_support_tokens": true,
+        "use_visual_prototype": true,
+        "use_dense_text_guidance": true,
+        "dense_guidance_dim": 256,
+        "dense_guidance_strength": 0.5,
+        "guidance_dropout_prob": 0.1,
+        "guidance_scale_min": 0.8,
+        "guidance_scale_max": 1.2,
+        "guidance_clamp_max": 0.9,
+        "guidance_stage_weights": [
+          1.0,
+          0.5,
+          0.25,
+          0.0,
+          0.0
+        ],
+        "guidance_modulation_mode": "centered",
+        "use_deep_supervision": true
+      },
+      "training_protocol": {
+        "image_size": [
+          512,
+          512
+        ],
+        "metric_size": [
+          512,
+          512
+        ],
+        "seed": 42,
+        "task_token_source": "episode_prototype_only_fixed_training_support_eval",
+        "ablation_name": "no_prototype_bank_blending",
+        "use_semantic_text": true,
+        "use_visual_prototype": true,
+        "prototype_blend_target": 0.0,
+        "prototype_bank_blending_enabled": false,
+        "prototype_eval_support_samples": 4,
+        "prototype_warmup_epochs": 5,
+        "prototype_ramp_epochs": 10,
+        "prototype_refresh_samples": 4,
+        "prototype_refresh_interval": 1,
+        "domain_sampling_alpha": 0.0,
+        "warmup_epochs": 5,
+        "lr": 5e-05,
+        "min_lr": 1e-06,
+        "loss_config": {
+          "ce": 0.5,
+          "dice": 1.0,
+          "focal_tversky": 0.25,
+          "tversky_alpha": 0.3,
+          "tversky_beta": 0.7,
+          "tversky_gamma": 0.75,
+          "dense": 0.15,
+          "aux_weights": [
+            0.1,
+            0.15,
+            0.25
+          ]
+        },
+        "domain_thresholds": {
+          "thyroid": 0.5,
+          "TN3K": 0.5,
+          "BUSI_WHU": 0.5,
+          "BUS-BRA": 0.5,
+          "OTU": 0.5,
+          "prostate": 0.5,
+          "default": 0.5
+        },
+        "postprocess_cfg": {
+          "default": {
+            "min_area": 0,
+            "min_area_ratio": 0.0,
+            "keep_largest": false,
+            "fill_holes": false,
+            "closing_kernel": 0
+          }
+        },
+        "validation_use_postprocess": false,
+        "validation_original_size": false,
+        "amp": true,
+        "center_text_features": true
+      }
+    },
+    {
+      "run": "TSV3/paper_artifacts/runs/iris2d/seed_42/checkpoint.pth",
+      "schema": 1,
+      "epoch": 66,
+      "best_val_dice": 0.8652057010940011,
+      "parameter_elements": 24951912,
+      "model_config": {
+        "base_channels": 32,
+        "context_queries": 10,
+        "heads": 8,
+        "attention_depth": 2,
+        "dropout": 0.1
+      },
+      "source_hashes": {
+        "tasksegment/data/datasets.py": "06a6e8a4ea3a5a6cfc8e819daf0e20812d016d1ca469dceed416aa21d38c08dc",
+        "tasksegment/training/augmentations.py": "86c82b815c538367e1c5107cb9269412f0480490c3c95c0f2d2a0c763274cb18",
+        "tasksegment/training/metrics.py": "61be94e564afdfdd3f914af27188865c2bec4cc6ca23a35ad550bb4100067c1d",
+        "paperlab/progress.py": "0c10b430c987afe1ed7d13b39d40a94d653752813077896f5694d27fcf09db8b",
+        "iris2d/__init__.py": "bc85d2d3acaed8026192c0f13187a3575d364670e94c725dd378cc12a331f0eb",
+        "iris2d/model.py": "108937dba37640b666af094467c01155058c14878ebf1b459ed0360d2774a19a",
+        "iris2d/project.py": "3564fdd8f21422d0a9dc28dd857f956e211406312ba8ddbaaa35cedc0b141bb5",
+        "iris2d/protocol.py": "29d124d71e1c7cc6ca517e86c8aee735e3c4fbd13188d367ddfebbd0d74159b9",
+        "iris2d/runner.py": "eef0fa7fb7cd62d5e163dca4b2c063806f6e8f27eaa55fd92b404822619d1b64",
+        "configs/iris2d_baseline.json": "caf94aa3eff28d9f7fa33424145eae4be589928d5fbcbfc3e20b7d66435b1af5",
+        "configs/iris2d_reference.json": "db12b5380db0aaa04b835624fd1d7029dcbac9bc36d16499ca455a8a32d4f0ea",
+        "configs/paper_3seeds.json::controlled_protocol": "fdcbc264aaf356c1823f175fcd34b1664bf91e292ae36763650749a843686517"
+      },
+      "training_protocol": {
+        "device": "cuda",
+        "cache_dataset": true,
+        "seed": 42,
+        "image_size": 512,
+        "base_channels": 32,
+        "context_queries": 10,
+        "attention_depth": 2,
+        "support_count": 1,
+        "query_count": 4,
+        "eval_support_count": 4,
+        "eval_batch_size": 4,
+        "epochs": 150,
+        "episodes_per_epoch": 1500,
+        "grad_accum_steps": 4,
+        "lr": 0.0001,
+        "min_lr": 1e-06,
+        "weight_decay": 0.0001,
+        "warmup_epochs": 5,
+        "patience": 20,
+        "no_amp": false,
+        "resume": false,
+        "smoke": false
+      }
+    },
+    {
+      "run": "TSV4/paper_artifacts/runs/tasksegment_no_text_conditioning/seed_42/checkpoint.pth",
+      "architecture": "TaskSegment_DomainTextV3",
+      "schema_version": 4,
+      "epoch": 83,
+      "best_val_dice": 0.8770840402184731,
+      "parameter_elements": 66068747,
+      "model_config": {
+        "use_ftext": true,
+        "use_semantic_text": false,
+        "hidden_dim": 1024,
+        "num_query_tokens": 4,
+        "context_upscale": 4,
+        "dropout": 0.1,
+        "text_dim": 1024,
+        "text_group_summary_count": 5,
+        "domain_names": [
+          "thyroid",
+          "TN3K",
+          "BUSI_WHU",
+          "BUS-BRA",
+          "OTU",
+          "prostate"
+        ],
+        "use_domain_embedding": false,
+        "use_group_embedding": false,
+        "domain_embedding_scale_init": 0.5,
+        "group_embedding_scale_init": 0.25,
+        "text_semantic_scale_init": 1.0,
+        "task_norm_type": "group",
+        "group_norm_groups": 16,
+        "encoder_norm_type": "group",
+        "fg_token_weight": 0.3,
+        "skip_gate_mode": "centered",
+        "aggregate_support_tokens": true,
+        "use_visual_prototype": true,
+        "use_dense_text_guidance": true,
+        "dense_guidance_dim": 256,
+        "dense_guidance_strength": 0.5,
+        "guidance_dropout_prob": 0.1,
+        "guidance_scale_min": 0.8,
+        "guidance_scale_max": 1.2,
+        "guidance_clamp_max": 0.9,
+        "guidance_stage_weights": [
+          1.0,
+          0.5,
+          0.25,
+          0.0,
+          0.0
+        ],
+        "guidance_modulation_mode": "centered",
+        "use_deep_supervision": true
+      },
+      "training_protocol": {
+        "image_size": [
+          512,
+          512
+        ],
+        "metric_size": [
+          512,
+          512
+        ],
+        "seed": 42,
+        "task_token_source": "episode_prototype_only_fixed_training_support_eval",
+        "ablation_name": "no_text_conditioning",
+        "condition_token_source": "zero_condition_tokens_no_text_or_domain_signal",
+        "use_semantic_text": false,
+        "use_visual_prototype": true,
+        "prototype_blend_target": 0.0,
+        "prototype_bank_blending_enabled": false,
+        "prototype_eval_support_samples": 4,
+        "prototype_warmup_epochs": 5,
+        "prototype_ramp_epochs": 10,
+        "prototype_refresh_samples": 4,
+        "prototype_refresh_interval": 1,
+        "domain_sampling_alpha": 0.0,
+        "warmup_epochs": 5,
+        "lr": 5e-05,
+        "min_lr": 1e-06,
+        "loss_config": {
+          "ce": 0.5,
+          "dice": 1.0,
+          "focal_tversky": 0.25,
+          "tversky_alpha": 0.3,
+          "tversky_beta": 0.7,
+          "tversky_gamma": 0.75,
+          "dense": 0.15,
+          "aux_weights": [
+            0.1,
+            0.15,
+            0.25
+          ]
+        },
+        "domain_thresholds": {
+          "thyroid": 0.5,
+          "TN3K": 0.5,
+          "BUSI_WHU": 0.5,
+          "BUS-BRA": 0.5,
+          "OTU": 0.5,
+          "prostate": 0.5,
+          "default": 0.5
+        },
+        "postprocess_cfg": {
+          "default": {
+            "min_area": 0,
+            "min_area_ratio": 0.0,
+            "keep_largest": false,
+            "fill_holes": false,
+            "closing_kernel": 0
+          }
+        },
+        "validation_use_postprocess": false,
+        "validation_original_size": false,
+        "amp": true,
+        "center_text_features": false
+      }
+    },
+    {
+      "run": "TSV4/paper_artifacts/runs/tasksegment_no_visual_prototype/seed_42/checkpoint.pth",
+      "architecture": "TaskSegment_DomainTextV3",
+      "schema_version": 4,
+      "epoch": 78,
+      "best_val_dice": 0.8782904225992083,
+      "parameter_elements": 66080013,
+      "model_config": {
+        "use_ftext": true,
+        "use_semantic_text": true,
+        "hidden_dim": 1024,
+        "num_query_tokens": 4,
+        "context_upscale": 4,
+        "dropout": 0.1,
+        "text_dim": 1024,
+        "text_group_summary_count": 5,
+        "domain_names": [
+          "thyroid",
+          "TN3K",
+          "BUSI_WHU",
+          "BUS-BRA",
+          "OTU",
+          "prostate"
+        ],
+        "use_domain_embedding": true,
+        "use_group_embedding": true,
+        "domain_embedding_scale_init": 0.5,
+        "group_embedding_scale_init": 0.25,
+        "text_semantic_scale_init": 1.0,
+        "task_norm_type": "group",
+        "group_norm_groups": 16,
+        "encoder_norm_type": "group",
+        "fg_token_weight": 0.3,
+        "skip_gate_mode": "centered",
+        "aggregate_support_tokens": true,
+        "use_visual_prototype": false,
+        "use_dense_text_guidance": true,
+        "dense_guidance_dim": 256,
+        "dense_guidance_strength": 0.5,
+        "guidance_dropout_prob": 0.1,
+        "guidance_scale_min": 0.8,
+        "guidance_scale_max": 1.2,
+        "guidance_clamp_max": 0.9,
+        "guidance_stage_weights": [
+          1.0,
+          0.5,
+          0.25,
+          0.0,
+          0.0
+        ],
+        "guidance_modulation_mode": "centered",
+        "use_deep_supervision": true
+      },
+      "training_protocol": {
+        "image_size": [
+          512,
+          512
+        ],
+        "metric_size": [
+          512,
+          512
+        ],
+        "seed": 42,
+        "task_token_source": "null_visual_tokens_domain_text_ablation",
+        "ablation_name": "no_visual_prototype",
+        "condition_token_source": "structured_semantic_text_plus_domain_group_embeddings",
+        "use_semantic_text": true,
+        "use_visual_prototype": false,
+        "prototype_blend_target": 0.0,
+        "prototype_bank_blending_enabled": false,
+        "prototype_eval_support_samples": 4,
+        "prototype_warmup_epochs": 5,
+        "prototype_ramp_epochs": 10,
+        "prototype_refresh_samples": 4,
+        "prototype_refresh_interval": 1,
+        "domain_sampling_alpha": 0.0,
+        "warmup_epochs": 5,
+        "lr": 5e-05,
+        "min_lr": 1e-06,
+        "loss_config": {
+          "ce": 0.5,
+          "dice": 1.0,
+          "focal_tversky": 0.25,
+          "tversky_alpha": 0.3,
+          "tversky_beta": 0.7,
+          "tversky_gamma": 0.75,
+          "dense": 0.15,
+          "aux_weights": [
+            0.1,
+            0.15,
+            0.25
+          ]
+        },
+        "domain_thresholds": {
+          "thyroid": 0.5,
+          "TN3K": 0.5,
+          "BUSI_WHU": 0.5,
+          "BUS-BRA": 0.5,
+          "OTU": 0.5,
+          "prostate": 0.5,
+          "default": 0.5
+        },
+        "postprocess_cfg": {
+          "default": {
+            "min_area": 0,
+            "min_area_ratio": 0.0,
+            "keep_largest": false,
+            "fill_holes": false,
+            "closing_kernel": 0
+          }
+        },
+        "validation_use_postprocess": false,
+        "validation_original_size": false,
+        "amp": true,
+        "center_text_features": true
+      }
+    },
+    {
+      "run": "TSV4/paper_artifacts/runs/tasksegment_no_dense_guidance_nobank/seed_42/checkpoint.pth",
+      "architecture": "TaskSegment_DomainTextV3",
+      "schema_version": 4,
+      "epoch": 69,
+      "best_val_dice": 0.8724513883911521,
+      "parameter_elements": 62992908,
+      "model_config": {
+        "use_ftext": true,
+        "use_semantic_text": true,
+        "hidden_dim": 1024,
+        "num_query_tokens": 4,
+        "context_upscale": 4,
+        "dropout": 0.1,
+        "text_dim": 1024,
+        "text_group_summary_count": 5,
+        "domain_names": [
+          "thyroid",
+          "TN3K",
+          "BUSI_WHU",
+          "BUS-BRA",
+          "OTU",
+          "prostate"
+        ],
+        "use_domain_embedding": true,
+        "use_group_embedding": true,
+        "domain_embedding_scale_init": 0.5,
+        "group_embedding_scale_init": 0.25,
+        "text_semantic_scale_init": 1.0,
+        "task_norm_type": "group",
+        "group_norm_groups": 16,
+        "encoder_norm_type": "group",
+        "fg_token_weight": 0.3,
+        "skip_gate_mode": "centered",
+        "aggregate_support_tokens": true,
+        "use_visual_prototype": true,
+        "use_dense_text_guidance": false,
+        "dense_guidance_dim": 256,
+        "dense_guidance_strength": 0.5,
+        "guidance_dropout_prob": 0.1,
+        "guidance_scale_min": 0.8,
+        "guidance_scale_max": 1.2,
+        "guidance_clamp_max": 0.9,
+        "guidance_stage_weights": [
+          1.0,
+          0.5,
+          0.25,
+          0.0,
+          0.0
+        ],
+        "guidance_modulation_mode": "centered",
+        "use_deep_supervision": true
+      },
+      "training_protocol": {
+        "image_size": [
+          512,
+          512
+        ],
+        "metric_size": [
+          512,
+          512
+        ],
+        "seed": 42,
+        "task_token_source": "episode_prototype_only_fixed_training_support_eval",
+        "ablation_name": "no_dense_guidance",
+        "condition_token_source": "structured_semantic_text_plus_domain_group_embeddings",
+        "use_semantic_text": true,
+        "use_visual_prototype": true,
+        "prototype_blend_target": 0.0,
+        "prototype_bank_blending_enabled": false,
+        "prototype_eval_support_samples": 4,
+        "prototype_warmup_epochs": 5,
+        "prototype_ramp_epochs": 10,
+        "prototype_refresh_samples": 4,
+        "prototype_refresh_interval": 1,
+        "domain_sampling_alpha": 0.0,
+        "warmup_epochs": 5,
+        "lr": 5e-05,
+        "min_lr": 1e-06,
+        "loss_config": {
+          "ce": 0.5,
+          "dice": 1.0,
+          "focal_tversky": 0.25,
+          "tversky_alpha": 0.3,
+          "tversky_beta": 0.7,
+          "tversky_gamma": 0.75,
+          "dense": 0.0,
+          "aux_weights": [
+            0.1,
+            0.15,
+            0.25
+          ]
+        },
+        "domain_thresholds": {
+          "thyroid": 0.5,
+          "TN3K": 0.5,
+          "BUSI_WHU": 0.5,
+          "BUS-BRA": 0.5,
+          "OTU": 0.5,
+          "prostate": 0.5,
+          "default": 0.5
+        },
+        "postprocess_cfg": {
+          "default": {
+            "min_area": 0,
+            "min_area_ratio": 0.0,
+            "keep_largest": false,
+            "fill_holes": false,
+            "closing_kernel": 0
+          }
+        },
+        "validation_use_postprocess": false,
+        "validation_original_size": false,
+        "amp": true,
+        "center_text_features": true
+      }
+    },
+    {
+      "run": "TSV5/paper_artifacts/runs/tasksegment_no_task_conditioned_decoder/seed_42/checkpoint.pth",
+      "architecture": "TaskSegment_DomainTextV3",
+      "schema_version": 5,
+      "epoch": 78,
+      "best_val_dice": 0.8696261277011725,
+      "parameter_elements": 66080013,
+      "model_config": {
+        "use_ftext": true,
+        "use_semantic_text": false,
+        "hidden_dim": 1024,
+        "num_query_tokens": 4,
+        "context_upscale": 4,
+        "dropout": 0.1,
+        "text_dim": 1024,
+        "text_group_summary_count": 5,
+        "domain_names": [
+          "thyroid",
+          "TN3K",
+          "BUSI_WHU",
+          "BUS-BRA",
+          "OTU",
+          "prostate"
+        ],
+        "use_domain_embedding": true,
+        "use_group_embedding": true,
+        "domain_embedding_scale_init": 0.5,
+        "group_embedding_scale_init": 0.25,
+        "text_semantic_scale_init": 1.0,
+        "task_norm_type": "group",
+        "group_norm_groups": 16,
+        "encoder_norm_type": "group",
+        "fg_token_weight": 0.3,
+        "skip_gate_mode": "centered",
+        "aggregate_support_tokens": true,
+        "use_visual_prototype": true,
+        "use_task_specific_representation": true,
+        "use_task_conditioned_decoder": false,
+        "use_dense_text_guidance": true,
+        "dense_guidance_dim": 256,
+        "dense_guidance_strength": 0.5,
+        "guidance_dropout_prob": 0.1,
+        "guidance_scale_min": 0.8,
+        "guidance_scale_max": 1.2,
+        "guidance_clamp_max": 0.9,
+        "guidance_stage_weights": [
+          1.0,
+          0.5,
+          0.25,
+          0.0,
+          0.0
+        ],
+        "guidance_modulation_mode": "centered",
+        "use_deep_supervision": true
+      },
+      "training_protocol": {
+        "image_size": [
+          512,
+          512
+        ],
+        "metric_size": [
+          512,
+          512
+        ],
+        "seed": 42,
+        "task_token_source": "unconditioned_query_decoder",
+        "ablation_name": "no_task_conditioned_decoder",
+        "condition_token_source": "not_used_unconditioned_decoder",
+        "use_semantic_text": false,
+        "use_visual_prototype": true,
+        "use_task_specific_representation": true,
+        "use_task_conditioned_decoder": false,
+        "requires_visual_support": false,
+        "requires_condition_inputs": false,
+        "prototype_blend_target": 0.0,
+        "prototype_bank_blending_enabled": false,
+        "prototype_eval_support_samples": 4,
+        "prototype_warmup_epochs": 5,
+        "prototype_ramp_epochs": 10,
+        "prototype_refresh_samples": 4,
+        "prototype_refresh_interval": 1,
+        "domain_sampling_alpha": 0.0,
+        "warmup_epochs": 5,
+        "lr": 5e-05,
+        "min_lr": 1e-06,
+        "loss_config": {
+          "ce": 0.5,
+          "dice": 1.0,
+          "focal_tversky": 0.25,
+          "tversky_alpha": 0.3,
+          "tversky_beta": 0.7,
+          "tversky_gamma": 0.75,
+          "dense": 0.0,
+          "aux_weights": [
+            0.1,
+            0.15,
+            0.25
+          ]
+        },
+        "domain_thresholds": {
+          "thyroid": 0.5,
+          "TN3K": 0.5,
+          "BUSI_WHU": 0.5,
+          "BUS-BRA": 0.5,
+          "OTU": 0.5,
+          "prostate": 0.5,
+          "default": 0.5
+        },
+        "postprocess_cfg": {
+          "default": {
+            "min_area": 0,
+            "min_area_ratio": 0.0,
+            "keep_largest": false,
+            "fill_holes": false,
+            "closing_kernel": 0
+          }
+        },
+        "validation_use_postprocess": false,
+        "validation_original_size": false,
+        "amp": true,
+        "center_text_features": true
+      }
+    }
+  ],
+  "summary_verification": {
+    "passed": true,
+    "checked_values": 402,
+    "scope": "Archived domain summaries, not a new evaluation of predictions"
+  }
+}

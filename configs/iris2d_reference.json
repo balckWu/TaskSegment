@@ -1,0 +1,169 @@
+{
+  "schema_version": 2,
+  "reference": "reviewed local TSV3/TaskSegment",
+  "normalized_source_sha256": {
+    "tasksegment/data/datasets.py": "26212776086624ff3fcaa2182455492b942b5ce44b74abaaeeaa096dda971312",
+    "tasksegment/training/augmentations.py": "86c82b815c538367e1c5107cb9269412f0480490c3c95c0f2d2a0c763274cb18",
+    "tasksegment/training/metrics.py": "61be94e564afdfdd3f914af27188865c2bec4cc6ca23a35ad550bb4100067c1d",
+    "paperlab/progress.py": "0c10b430c987afe1ed7d13b39d40a94d653752813077896f5694d27fcf09db8b"
+  },
+  "learning_rate_function_sha256": {
+    "scripts/train_unet.py": "bf0b1aea053e1eccb4f528cc3ed5846fd94a2e38dd0379d655af92653b774bb1",
+    "scripts/train_unetpp.py": "bf0b1aea053e1eccb4f528cc3ed5846fd94a2e38dd0379d655af92653b774bb1",
+    "scripts/train_swinunet_official.py": "bf0b1aea053e1eccb4f528cc3ed5846fd94a2e38dd0379d655af92653b774bb1",
+    "scripts/train_transunet_official.py": "bf0b1aea053e1eccb4f528cc3ed5846fd94a2e38dd0379d655af92653b774bb1"
+  },
+  "controlled_protocol": {
+    "epochs": 150,
+    "batch_size": 4,
+    "val_batch_size": 4,
+    "grad_accum_steps": 4,
+    "effective_batch_size": 16,
+    "episodes_per_epoch": 1500,
+    "warmup_epochs": 5,
+    "patience": 20,
+    "threshold": 0.5,
+    "metric_size": [
+      512,
+      512
+    ],
+    "domain_sampling_alpha": 0,
+    "deterministic": true,
+    "amp": true,
+    "postprocess": false,
+    "seeds": [
+      42,
+      3407,
+      2026
+    ]
+  },
+  "observed_seed3407_first_epochs": {
+    "unetpp": [
+      {
+        "epoch": 1,
+        "lr": 0.00002
+      },
+      {
+        "epoch": 2,
+        "lr": 0.00004
+      },
+      {
+        "epoch": 3,
+        "lr": 0.00006000000000000001
+      },
+      {
+        "epoch": 4,
+        "lr": 0.00008
+      },
+      {
+        "epoch": 5,
+        "lr": 0.0001
+      },
+      {
+        "epoch": 6,
+        "lr": 0.0001
+      },
+      {
+        "epoch": 7,
+        "lr": 0.0000999882203404555
+      }
+    ],
+    "swinunet_official": [
+      {
+        "epoch": 1,
+        "lr": 0.00002
+      },
+      {
+        "epoch": 2,
+        "lr": 0.00004
+      },
+      {
+        "epoch": 3,
+        "lr": 0.00006000000000000001
+      },
+      {
+        "epoch": 4,
+        "lr": 0.00008
+      },
+      {
+        "epoch": 5,
+        "lr": 0.0001
+      },
+      {
+        "epoch": 6,
+        "lr": 0.0001
+      },
+      {
+        "epoch": 7,
+        "lr": 0.0000999882203404555
+      }
+    ],
+    "transunet_pretrained": [
+      {
+        "epoch": 1,
+        "lr": 0.00002
+      },
+      {
+        "epoch": 2,
+        "lr": 0.00004
+      },
+      {
+        "epoch": 3,
+        "lr": 0.00006000000000000001
+      },
+      {
+        "epoch": 4,
+        "lr": 0.00008
+      },
+      {
+        "epoch": 5,
+        "lr": 0.0001
+      },
+      {
+        "epoch": 6,
+        "lr": 0.0001
+      },
+      {
+        "epoch": 7,
+        "lr": 0.0000999882203404555
+      }
+    ],
+    "sammed2d_promptfree": [
+      {
+        "epoch": 1,
+        "lr": 0.000020800000000000004
+      },
+      {
+        "epoch": 2,
+        "lr": 0.000040600000000000004
+      },
+      {
+        "epoch": 3,
+        "lr": 0.0000604
+      },
+      {
+        "epoch": 4,
+        "lr": 0.00008020000000000001
+      },
+      {
+        "epoch": 5,
+        "lr": 0.0001
+      },
+      {
+        "epoch": 6,
+        "lr": 0.0001
+      },
+      {
+        "epoch": 7,
+        "lr": 0.0000999882203404555
+      }
+    ]
+  },
+  "ast_hash_format": "portable_ast_json_v1",
+  "source_ast_sha256": {
+    "tasksegment/data/datasets.py": "6438daee4c5637c204e7e0188ac6d984a1f985c8ecf37083de5f8fc77903471f",
+    "tasksegment/training/augmentations.py": "73312a2b07dc6d0ce1eed24db3231126bd9e8c2a3a32a2bb58f07a88f5c8e4c5",
+    "tasksegment/training/metrics.py": "4f4f8f963c39c814716c4d02b7a4ff8fa78521dd173f0de940dde03f3da88db1",
+    "paperlab/progress.py": "f4cab3374eaaf50c9eb97425b6cac77b004dbd922449e39a1b6835d0c4b6afb0"
+  }
+}

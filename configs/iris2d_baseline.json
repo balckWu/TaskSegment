@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "name": "iris2d",
+  "implementation": "independent paper-based 2D adaptation",
+  "reference_config": "configs/paper_3seeds.json",
+  "optimizer": "AdamW",
+  "lr": 0.0001,
+  "min_lr": 0.000001,
+  "weight_decay": 0.0001,
+  "lr_schedule": "unet_family_linear_warmup_then_epoch_cosine",
+  "max_grad_norm": 5.0,
+  "support_count": 1,
+  "eval_support_count": 4,
+  "model": {
+    "base_channels": 32,
+    "context_queries": 10,
+    "attention_depth": 2
+  }
+}

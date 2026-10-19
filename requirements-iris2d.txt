@@ -1,0 +1,7 @@
+# Reuse the TS environment when these packages are already installed.
+torch>=2.5,<3
+numpy>=1.24
+scipy>=1.10
+opencv-python-headless>=4.8
+Pillow>=9
+tqdm>=4.65

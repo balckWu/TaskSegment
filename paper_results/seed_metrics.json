@@ -1,0 +1,2112 @@
+{
+  "schema_version": 1,
+  "source": "Archived server evaluation summaries; collected 2026-10-19. No new predictions.",
+  "rows": [
+    {
+      "method": "tasksegment_full2",
+      "seed": 42,
+      "domain": "BUS-BRA",
+      "n": 283,
+      "dice": 0.9030406832382337,
+      "iou": 0.836287031918418,
+      "hd95": 20.664984289411944
+    },
+    {
+      "method": "tasksegment_full2",
+      "seed": 42,
+      "domain": "BUSI_WHU",
+      "n": 186,
+      "dice": 0.8910561004987365,
+      "iou": 0.8140351677198531,
+      "hd95": 23.339934210623465
+    },
+    {
+      "method": "tasksegment_full2",
+      "seed": 42,
+      "domain": "OTU",
+      "n": 382,
+      "dice": 0.8670635829162957,
+      "iou": 0.7938619553847569,
+      "hd95": 44.29298138618469
+    },
+    {
+      "method": "tasksegment_full2",
+      "seed": 42,
+      "domain": "TN3K",
+      "n": 614,
+      "dice": 0.8348961330407262,
+      "iou": 0.7459456080814185,
+      "hd95": 36.74057270261286
+    },
+    {
+      "method": "tasksegment_full2",
+      "seed": 42,
+      "domain": "prostate",
+      "n": 16,
+      "dice": 0.9325528852845024,
+      "iou": 0.8754765354932941,
+      "hd95": 20.723292976617813
+    },
+    {
+      "method": "tasksegment_full2",
+      "seed": 42,
+      "domain": "thyroid",
+      "n": 286,
+      "dice": 0.8607132438499406,
+      "iou": 0.7802654711845142,
+      "hd95": 25.27197263874374
+    },
+    {
+      "method": "tasksegment_full2",
+      "seed": 3407,
+      "domain": "BUS-BRA",
+      "n": 283,
+      "dice": 0.9021127655000198,
+      "iou": 0.8354823261538259,
+      "hd95": 21.458892116277042
+    },
+    {
+      "method": "tasksegment_full2",
+      "seed": 3407,
+      "domain": "BUSI_WHU",
+      "n": 186,
+      "dice": 0.8874500505792456,
+      "iou": 0.8092768063211618,
+      "hd95": 24.005907271497993
+    },
+    {
+      "method": "tasksegment_full2",
+      "seed": 3407,
+      "domain": "OTU",
+      "n": 382,
+      "dice": 0.8693366202533446,
+      "iou": 0.798710154251052,
+      "hd95": 38.31963780101057
+    },
+    {
+      "method": "tasksegment_full2",
+      "seed": 3407,
+      "domain": "TN3K",
+      "n": 614,
+      "dice": 0.8404889264700922,
+      "iou": 0.7489721966726609,
+      "hd95": 37.22856095248791
+    },
+    {
+      "method": "tasksegment_full2",
+      "seed": 3407,
+      "domain": "prostate",
+      "n": 16,
+      "dice": 0.9254133603806327,
+      "iou": 0.8636681444993086,
+      "hd95": 21.695279717445374
+    },
+    {
+      "method": "tasksegment_full2",
+      "seed": 3407,
+      "domain": "thyroid",
+      "n": 286,
+      "dice": 0.8579831342840397,
+      "iou": 0.7773950348844371,
+      "hd95": 25.309582640241075
+    },
+    {
+      "method": "tasksegment_full2",
+      "seed": 2026,
+      "domain": "BUS-BRA",
+      "n": 283,
+      "dice": 0.8966563911013146,
+      "iou": 0.8306954036998466,
+      "hd95": 22.478476936320114
+    },
+    {
+      "method": "tasksegment_full2",
+      "seed": 2026,
+      "domain": "BUSI_WHU",
+      "n": 186,
+      "dice": 0.8904729575141337,
+      "iou": 0.8143924541760786,
+      "hd95": 21.55818775135984
+    },
+    {
+      "method": "tasksegment_full2",
+      "seed": 2026,
+      "domain": "OTU",
+      "n": 382,
+      "dice": 0.8671911260382996,
+      "iou": 0.7970124502700662,
+      "hd95": 38.01695546492232
+    },
+    {
+      "method": "tasksegment_full2",
+      "seed": 2026,
+      "domain": "TN3K",
+      "n": 614,
+      "dice": 0.8411917399981595,
+      "iou": 0.7510136212111339,
+      "hd95": 38.32691325815182
+    },
+    {
+      "method": "tasksegment_full2",
+      "seed": 2026,
+      "domain": "prostate",
+      "n": 16,
+      "dice": 0.9296532708406031,
+      "iou": 0.869981457598388,
+      "hd95": 20.432776391506195
+    },
+    {
+      "method": "tasksegment_full2",
+      "seed": 2026,
+      "domain": "thyroid",
+      "n": 286,
+      "dice": 0.852479145423969,
+      "iou": 0.7701264115464876,
+      "hd95": 28.64612629530313
+    },
+    {
+      "method": "unet",
+      "seed": 42,
+      "domain": "thyroid",
+      "n": 286,
+      "dice": 0.8286863561112924,
+      "iou": 0.7317200447153335,
+      "hd95": 41.68287423940805
+    },
+    {
+      "method": "unet",
+      "seed": 42,
+      "domain": "TN3K",
+      "n": 614,
+      "dice": 0.7947239265504515,
+      "iou": 0.6897056741298008,
+      "hd95": 55.71098741490989
+    },
+    {
+      "method": "unet",
+      "seed": 42,
+      "domain": "BUSI_WHU",
+      "n": 186,
+      "dice": 0.8494537585600804,
+      "iou": 0.7558514172095298,
+      "hd95": 43.42480247507813
+    },
+    {
+      "method": "unet",
+      "seed": 42,
+      "domain": "BUS-BRA",
+      "n": 283,
+      "dice": 0.8666667377208284,
+      "iou": 0.7864969727480414,
+      "hd95": 34.22155358766077
+    },
+    {
+      "method": "unet",
+      "seed": 42,
+      "domain": "OTU",
+      "n": 382,
+      "dice": 0.8502566973245917,
+      "iou": 0.7670768625994656,
+      "hd95": 52.20350362493106
+    },
+    {
+      "method": "unet",
+      "seed": 42,
+      "domain": "prostate",
+      "n": 16,
+      "dice": 0.9206403004189748,
+      "iou": 0.8548717654997589,
+      "hd95": 24.778548061847687
+    },
+    {
+      "method": "unet",
+      "seed": 3407,
+      "domain": "thyroid",
+      "n": 286,
+      "dice": 0.8217956206979328,
+      "iou": 0.7248494783976713,
+      "hd95": 42.11222961232379
+    },
+    {
+      "method": "unet",
+      "seed": 3407,
+      "domain": "TN3K",
+      "n": 614,
+      "dice": 0.7966003050175655,
+      "iou": 0.6936922548383984,
+      "hd95": 55.09913612266317
+    },
+    {
+      "method": "unet",
+      "seed": 3407,
+      "domain": "BUSI_WHU",
+      "n": 186,
+      "dice": 0.8556486458739815,
+      "iou": 0.7650070505113528,
+      "hd95": 41.02823325126402
+    },
+    {
+      "method": "unet",
+      "seed": 3407,
+      "domain": "BUS-BRA",
+      "n": 283,
+      "dice": 0.8693374177136316,
+      "iou": 0.7876227635817421,
+      "hd95": 36.927175497419
+    },
+    {
+      "method": "unet",
+      "seed": 3407,
+      "domain": "OTU",
+      "n": 382,
+      "dice": 0.8491913496417077,
+      "iou": 0.7660124757033189,
+      "hd95": 51.70553881522873
+    },
+    {
+      "method": "unet",
+      "seed": 3407,
+      "domain": "prostate",
+      "n": 16,
+      "dice": 0.9248024196526478,
+      "iou": 0.861909294988529,
+      "hd95": 22.61952668428421
+    },
+    {
+      "method": "unet",
+      "seed": 2026,
+      "domain": "thyroid",
+      "n": 286,
+      "dice": 0.817937488948716,
+      "iou": 0.7242544942664565,
+      "hd95": 43.937913479504886
+    },
+    {
+      "method": "unet",
+      "seed": 2026,
+      "domain": "TN3K",
+      "n": 614,
+      "dice": 0.792498200719777,
+      "iou": 0.6882205574822814,
+      "hd95": 56.839569960820945
+    },
+    {
+      "method": "unet",
+      "seed": 2026,
+      "domain": "BUSI_WHU",
+      "n": 186,
+      "dice": 0.8528146288502334,
+      "iou": 0.7609882089507201,
+      "hd95": 43.811920732580205
+    },
+    {
+      "method": "unet",
+      "seed": 2026,
+      "domain": "BUS-BRA",
+      "n": 283,
+      "dice": 0.8664382286111816,
+      "iou": 0.7862352581107636,
+      "hd95": 40.36439678946991
+    },
+    {
+      "method": "unet",
+      "seed": 2026,
+      "domain": "OTU",
+      "n": 382,
+      "dice": 0.8511278546629836,
+      "iou": 0.7682273007867745,
+      "hd95": 53.42099779937904
+    },
+    {
+      "method": "unet",
+      "seed": 2026,
+      "domain": "prostate",
+      "n": 16,
+      "dice": 0.9212214855359506,
+      "iou": 0.8556998313346867,
+      "hd95": 23.46509075164795
+    },
+    {
+      "method": "unetpp",
+      "seed": 42,
+      "domain": "thyroid",
+      "n": 286,
+      "dice": 0.834136841182609,
+      "iou": 0.7406263243265191,
+      "hd95": 37.15525309856121
+    },
+    {
+      "method": "unetpp",
+      "seed": 42,
+      "domain": "TN3K",
+      "n": 614,
+      "dice": 0.8045214774680577,
+      "iou": 0.7038076516691885,
+      "hd95": 53.25774976329617
+    },
+    {
+      "method": "unetpp",
+      "seed": 42,
+      "domain": "BUSI_WHU",
+      "n": 186,
+      "dice": 0.8637885426329781,
+      "iou": 0.7747543781296609,
+      "hd95": 38.61247228550655
+    },
+    {
+      "method": "unetpp",
+      "seed": 42,
+      "domain": "BUS-BRA",
+      "n": 283,
+      "dice": 0.873329457062691,
+      "iou": 0.7951800939432254,
+      "hd95": 34.42747979619057
+    },
+    {
+      "method": "unetpp",
+      "seed": 42,
+      "domain": "OTU",
+      "n": 382,
+      "dice": 0.8584490378578818,
+      "iou": 0.7795319620158541,
+      "hd95": 47.927255207955525
+    },
+    {
+      "method": "unetpp",
+      "seed": 42,
+      "domain": "prostate",
+      "n": 16,
+      "dice": 0.9266357226477917,
+      "iou": 0.8647676430962017,
+      "hd95": 22.40326738357544
+    },
+    {
+      "method": "unetpp",
+      "seed": 3407,
+      "domain": "thyroid",
+      "n": 286,
+      "dice": 0.8374708716738642,
+      "iou": 0.7439987146859208,
+      "hd95": 35.881947729971024
+    },
+    {
+      "method": "unetpp",
+      "seed": 3407,
+      "domain": "TN3K",
+      "n": 614,
+      "dice": 0.8071868864244329,
+      "iou": 0.7077807341931095,
+      "hd95": 48.611618221388575
+    },
+    {
+      "method": "unetpp",
+      "seed": 3407,
+      "domain": "BUSI_WHU",
+      "n": 186,
+      "dice": 0.8594195435270936,
+      "iou": 0.7714975975583651,
+      "hd95": 37.2367526485074
+    },
+    {
+      "method": "unetpp",
+      "seed": 3407,
+      "domain": "BUS-BRA",
+      "n": 283,
+      "dice": 0.8827000787301341,
+      "iou": 0.8070188883993291,
+      "hd95": 29.44923411409762
+    },
+    {
+      "method": "unetpp",
+      "seed": 3407,
+      "domain": "OTU",
+      "n": 382,
+      "dice": 0.8557282118117033,
+      "iou": 0.7759521479226118,
+      "hd95": 46.50833952863803
+    },
+    {
+      "method": "unetpp",
+      "seed": 3407,
+      "domain": "prostate",
+      "n": 16,
+      "dice": 0.9236125980773982,
+      "iou": 0.8596106464561899,
+      "hd95": 23.859398782253265
+    },
+    {
+      "method": "unetpp",
+      "seed": 2026,
+      "domain": "thyroid",
+      "n": 286,
+      "dice": 0.8326936534193237,
+      "iou": 0.7384267652422729,
+      "hd95": 37.34872836416418
+    },
+    {
+      "method": "unetpp",
+      "seed": 2026,
+      "domain": "TN3K",
+      "n": 614,
+      "dice": 0.8070071448449563,
+      "iou": 0.7074768384427835,
+      "hd95": 54.13001028955565
+    },
+    {
+      "method": "unetpp",
+      "seed": 2026,
+      "domain": "BUSI_WHU",
+      "n": 186,
+      "dice": 0.8662050136512508,
+      "iou": 0.7798078335103298,
+      "hd95": 36.70603739830755
+    },
+    {
+      "method": "unetpp",
+      "seed": 2026,
+      "domain": "BUS-BRA",
+      "n": 283,
+      "dice": 0.877702029571359,
+      "iou": 0.7999515639008299,
+      "hd95": 31.589397490235182
+    },
+    {
+      "method": "unetpp",
+      "seed": 2026,
+      "domain": "OTU",
+      "n": 382,
+      "dice": 0.8549150076813764,
+      "iou": 0.774916913665386,
+      "hd95": 48.51251382415831
+    },
+    {
+      "method": "unetpp",
+      "seed": 2026,
+      "domain": "prostate",
+      "n": 16,
+      "dice": 0.9232140606255839,
+      "iou": 0.8591011112144569,
+      "hd95": 22.64835011959076
+    },
+    {
+      "method": "swinunet_official",
+      "seed": 42,
+      "domain": "thyroid",
+      "n": 286,
+      "dice": 0.7657100697900571,
+      "iou": 0.658040393585765,
+      "hd95": 44.33809888775707
+    },
+    {
+      "method": "swinunet_official",
+      "seed": 42,
+      "domain": "TN3K",
+      "n": 614,
+      "dice": 0.7191984907756408,
+      "iou": 0.6076881626079809,
+      "hd95": 61.18071893291604
+    },
+    {
+      "method": "swinunet_official",
+      "seed": 42,
+      "domain": "BUSI_WHU",
+      "n": 186,
+      "dice": 0.8311233996837579,
+      "iou": 0.7367579782067217,
+      "hd95": 34.22235304053112
+    },
+    {
+      "method": "swinunet_official",
+      "seed": 42,
+      "domain": "BUS-BRA",
+      "n": 283,
+      "dice": 0.8412215459899597,
+      "iou": 0.7535536382555514,
+      "hd95": 37.120575215666626
+    },
+    {
+      "method": "swinunet_official",
+      "seed": 42,
+      "domain": "OTU",
+      "n": 382,
+      "dice": 0.8059818804305979,
+      "iou": 0.7117843436511876,
+      "hd95": 50.538724061706304
+    },
+    {
+      "method": "swinunet_official",
+      "seed": 42,
+      "domain": "prostate",
+      "n": 16,
+      "dice": 0.9199003312914116,
+      "iou": 0.8530343851316019,
+      "hd95": 26.36615616083145
+    },
+    {
+      "method": "swinunet_official",
+      "seed": 3407,
+      "domain": "thyroid",
+      "n": 286,
+      "dice": 0.7600913241276516,
+      "iou": 0.6502399114153857,
+      "hd95": 41.488155921856006
+    },
+    {
+      "method": "swinunet_official",
+      "seed": 3407,
+      "domain": "TN3K",
+      "n": 614,
+      "dice": 0.7226172050023022,
+      "iou": 0.610840253676058,
+      "hd95": 59.27639610369434
+    },
+    {
+      "method": "swinunet_official",
+      "seed": 3407,
+      "domain": "BUSI_WHU",
+      "n": 186,
+      "dice": 0.8407440070683284,
+      "iou": 0.7478569750637665,
+      "hd95": 30.879477882897984
+    },
+    {
+      "method": "swinunet_official",
+      "seed": 3407,
+      "domain": "BUS-BRA",
+      "n": 283,
+      "dice": 0.826955613121785,
+      "iou": 0.7332135963694979,
+      "hd95": 38.81024990823159
+    },
+    {
+      "method": "swinunet_official",
+      "seed": 3407,
+      "domain": "OTU",
+      "n": 382,
+      "dice": 0.8099386768309845,
+      "iou": 0.7153222485879772,
+      "hd95": 50.525332590672356
+    },
+    {
+      "method": "swinunet_official",
+      "seed": 3407,
+      "domain": "prostate",
+      "n": 16,
+      "dice": 0.9154482910619723,
+      "iou": 0.8452245874331463,
+      "hd95": 25.893364131450653
+    },
+    {
+      "method": "swinunet_official",
+      "seed": 2026,
+      "domain": "thyroid",
+      "n": 286,
+      "dice": 0.7567661811379447,
+      "iou": 0.6483915233176215,
+      "hd95": 40.85790245683043
+    },
+    {
+      "method": "swinunet_official",
+      "seed": 2026,
+      "domain": "TN3K",
+      "n": 614,
+      "dice": 0.7269185620986056,
+      "iou": 0.6164495143169426,
+      "hd95": 60.91883575019472
+    },
+    {
+      "method": "swinunet_official",
+      "seed": 2026,
+      "domain": "BUSI_WHU",
+      "n": 186,
+      "dice": 0.8363770097398202,
+      "iou": 0.7410847155874597,
+      "hd95": 32.42495160718118
+    },
+    {
+      "method": "swinunet_official",
+      "seed": 2026,
+      "domain": "BUS-BRA",
+      "n": 283,
+      "dice": 0.8384178372044888,
+      "iou": 0.7504923885367866,
+      "hd95": 37.784470603639626
+    },
+    {
+      "method": "swinunet_official",
+      "seed": 2026,
+      "domain": "OTU",
+      "n": 382,
+      "dice": 0.8076709072049721,
+      "iou": 0.7173685484759262,
+      "hd95": 48.14598659819958
+    },
+    {
+      "method": "swinunet_official",
+      "seed": 2026,
+      "domain": "prostate",
+      "n": 16,
+      "dice": 0.9152555338280379,
+      "iou": 0.8450298046161563,
+      "hd95": 24.14747005701065
+    },
+    {
+      "method": "transunet_pretrained",
+      "seed": 42,
+      "domain": "thyroid",
+      "n": 286,
+      "dice": 0.8292427810179225,
+      "iou": 0.7412618297445879,
+      "hd95": 28.767423638097057
+    },
+    {
+      "method": "transunet_pretrained",
+      "seed": 42,
+      "domain": "TN3K",
+      "n": 614,
+      "dice": 0.8343699265277501,
+      "iou": 0.7479362338517889,
+      "hd95": 40.94071547293896
+    },
+    {
+      "method": "transunet_pretrained",
+      "seed": 42,
+      "domain": "BUSI_WHU",
+      "n": 186,
+      "dice": 0.8777155145214575,
+      "iou": 0.7983350575506798,
+      "hd95": 26.256874408773196
+    },
+    {
+      "method": "transunet_pretrained",
+      "seed": 42,
+      "domain": "BUS-BRA",
+      "n": 283,
+      "dice": 0.8946768969404088,
+      "iou": 0.8188310701598244,
+      "hd95": 20.018664665019976
+    },
+    {
+      "method": "transunet_pretrained",
+      "seed": 42,
+      "domain": "OTU",
+      "n": 382,
+      "dice": 0.873844866282249,
+      "iou": 0.806354155325436,
+      "hd95": 35.70447726898792
+    },
+    {
+      "method": "transunet_pretrained",
+      "seed": 42,
+      "domain": "prostate",
+      "n": 16,
+      "dice": 0.916716266460347,
+      "iou": 0.8488342252782257,
+      "hd95": 47.520633578300476
+    },
+    {
+      "method": "transunet_pretrained",
+      "seed": 3407,
+      "domain": "thyroid",
+      "n": 286,
+      "dice": 0.8326933263694126,
+      "iou": 0.7446062046142939,
+      "hd95": 27.307435536718035
+    },
+    {
+      "method": "transunet_pretrained",
+      "seed": 3407,
+      "domain": "TN3K",
+      "n": 614,
+      "dice": 0.8267584721268518,
+      "iou": 0.7372329583614045,
+      "hd95": 41.52614170565279
+    },
+    {
+      "method": "transunet_pretrained",
+      "seed": 3407,
+      "domain": "BUSI_WHU",
+      "n": 186,
+      "dice": 0.8769332106938865,
+      "iou": 0.7950016413693265,
+      "hd95": 26.098221972424497
+    },
+    {
+      "method": "transunet_pretrained",
+      "seed": 3407,
+      "domain": "BUS-BRA",
+      "n": 283,
+      "dice": 0.8949338857967063,
+      "iou": 0.8194705068621133,
+      "hd95": 21.268495536945736
+    },
+    {
+      "method": "transunet_pretrained",
+      "seed": 3407,
+      "domain": "OTU",
+      "n": 382,
+      "dice": 0.8672503106368983,
+      "iou": 0.7984481321409304,
+      "hd95": 38.394645176632864
+    },
+    {
+      "method": "transunet_pretrained",
+      "seed": 3407,
+      "domain": "prostate",
+      "n": 16,
+      "dice": 0.9108200590070656,
+      "iou": 0.8392310467951813,
+      "hd95": 33.31847661733627
+    },
+    {
+      "method": "transunet_pretrained",
+      "seed": 2026,
+      "domain": "thyroid",
+      "n": 286,
+      "dice": 0.8479323258436011,
+      "iou": 0.7632524125615798,
+      "hd95": 23.913979697060753
+    },
+    {
+      "method": "transunet_pretrained",
+      "seed": 2026,
+      "domain": "TN3K",
+      "n": 614,
+      "dice": 0.8353401952887533,
+      "iou": 0.7447765257698221,
+      "hd95": 35.929982429218605
+    },
+    {
+      "method": "transunet_pretrained",
+      "seed": 2026,
+      "domain": "BUSI_WHU",
+      "n": 186,
+      "dice": 0.8848588808074945,
+      "iou": 0.8068449552594155,
+      "hd95": 22.168093225007418
+    },
+    {
+      "method": "transunet_pretrained",
+      "seed": 2026,
+      "domain": "BUS-BRA",
+      "n": 283,
+      "dice": 0.8976812474561378,
+      "iou": 0.8239075378480417,
+      "hd95": 19.253626030662456
+    },
+    {
+      "method": "transunet_pretrained",
+      "seed": 2026,
+      "domain": "OTU",
+      "n": 382,
+      "dice": 0.8764659191395463,
+      "iou": 0.8109614936827867,
+      "hd95": 35.74251520384045
+    },
+    {
+      "method": "transunet_pretrained",
+      "seed": 2026,
+      "domain": "prostate",
+      "n": 16,
+      "dice": 0.9091352915909953,
+      "iou": 0.8367666795180504,
+      "hd95": 52.08287072181702
+    },
+    {
+      "method": "clipseg_official",
+      "seed": 42,
+      "domain": "thyroid",
+      "n": 286,
+      "dice": 0.7836323838608126,
+      "iou": 0.6822805285896498,
+      "hd95": 35.93730071874765
+    },
+    {
+      "method": "clipseg_official",
+      "seed": 42,
+      "domain": "TN3K",
+      "n": 614,
+      "dice": 0.7744802452439079,
+      "iou": 0.6693681172088773,
+      "hd95": 51.41876222099158
+    },
+    {
+      "method": "clipseg_official",
+      "seed": 42,
+      "domain": "BUSI_WHU",
+      "n": 186,
+      "dice": 0.8539280397576148,
+      "iou": 0.7656340360168546,
+      "hd95": 29.331425128444547
+    },
+    {
+      "method": "clipseg_official",
+      "seed": 42,
+      "domain": "BUS-BRA",
+      "n": 283,
+      "dice": 0.8583823564529506,
+      "iou": 0.7741256161366249,
+      "hd95": 30.34494181149086
+    },
+    {
+      "method": "clipseg_official",
+      "seed": 42,
+      "domain": "OTU",
+      "n": 382,
+      "dice": 0.8226881889476956,
+      "iou": 0.7366410693981439,
+      "hd95": 45.858037102284854
+    },
+    {
+      "method": "clipseg_official",
+      "seed": 42,
+      "domain": "prostate",
+      "n": 16,
+      "dice": 0.9294746045981988,
+      "iou": 0.8689490089622492,
+      "hd95": 24.688360273838043
+    },
+    {
+      "method": "clipseg_official",
+      "seed": 3407,
+      "domain": "thyroid",
+      "n": 286,
+      "dice": 0.7893865155962957,
+      "iou": 0.6839712189822662,
+      "hd95": 34.42332625389099
+    },
+    {
+      "method": "clipseg_official",
+      "seed": 3407,
+      "domain": "TN3K",
+      "n": 614,
+      "dice": 0.7726696156698318,
+      "iou": 0.6666804170706936,
+      "hd95": 51.03350561682487
+    },
+    {
+      "method": "clipseg_official",
+      "seed": 3407,
+      "domain": "BUSI_WHU",
+      "n": 186,
+      "dice": 0.850647556205372,
+      "iou": 0.762612877058563,
+      "hd95": 28.941977170205885
+    },
+    {
+      "method": "clipseg_official",
+      "seed": 3407,
+      "domain": "BUS-BRA",
+      "n": 283,
+      "dice": 0.852176536951107,
+      "iou": 0.7640261329500467,
+      "hd95": 29.70412992504376
+    },
+    {
+      "method": "clipseg_official",
+      "seed": 3407,
+      "domain": "OTU",
+      "n": 382,
+      "dice": 0.8294664571463632,
+      "iou": 0.743418664500419,
+      "hd95": 45.345525318415376
+    },
+    {
+      "method": "clipseg_official",
+      "seed": 3407,
+      "domain": "prostate",
+      "n": 16,
+      "dice": 0.9304118938094648,
+      "iou": 0.8708447713199856,
+      "hd95": 24.80052226781845
+    },
+    {
+      "method": "clipseg_official",
+      "seed": 2026,
+      "domain": "thyroid",
+      "n": 286,
+      "dice": 0.7932596080469544,
+      "iou": 0.690834651903433,
+      "hd95": 34.19936086247851
+    },
+    {
+      "method": "clipseg_official",
+      "seed": 2026,
+      "domain": "TN3K",
+      "n": 614,
+      "dice": 0.7745237300493333,
+      "iou": 0.6683560452664759,
+      "hd95": 49.64172348991667
+    },
+    {
+      "method": "clipseg_official",
+      "seed": 2026,
+      "domain": "BUSI_WHU",
+      "n": 186,
+      "dice": 0.8541141845535916,
+      "iou": 0.7658716414716427,
+      "hd95": 28.33914557580025
+    },
+    {
+      "method": "clipseg_official",
+      "seed": 2026,
+      "domain": "BUS-BRA",
+      "n": 283,
+      "dice": 0.8592631557856169,
+      "iou": 0.7739843788411813,
+      "hd95": 28.035264475185542
+    },
+    {
+      "method": "clipseg_official",
+      "seed": 2026,
+      "domain": "OTU",
+      "n": 382,
+      "dice": 0.8307906776147499,
+      "iou": 0.7449836127481331,
+      "hd95": 45.324005898380776
+    },
+    {
+      "method": "clipseg_official",
+      "seed": 2026,
+      "domain": "prostate",
+      "n": 16,
+      "dice": 0.9291966634457727,
+      "iou": 0.8686529756564765,
+      "hd95": 26.01878982782364
+    },
+    {
+      "method": "lvit_native224",
+      "seed": 42,
+      "domain": "thyroid",
+      "n": 286,
+      "dice": 0.8034149152107539,
+      "iou": 0.7035040335773237,
+      "hd95": 41.10299589913384
+    },
+    {
+      "method": "lvit_native224",
+      "seed": 42,
+      "domain": "TN3K",
+      "n": 614,
+      "dice": 0.7642684826451548,
+      "iou": 0.6660224212456789,
+      "hd95": 59.43627186154871
+    },
+    {
+      "method": "lvit_native224",
+      "seed": 42,
+      "domain": "BUSI_WHU",
+      "n": 186,
+      "dice": 0.8649546907769654,
+      "iou": 0.7754842478096966,
+      "hd95": 29.023197022817467
+    },
+    {
+      "method": "lvit_native224",
+      "seed": 42,
+      "domain": "BUS-BRA",
+      "n": 283,
+      "dice": 0.867788667671553,
+      "iou": 0.7809669190407398,
+      "hd95": 29.623775322108724
+    },
+    {
+      "method": "lvit_native224",
+      "seed": 42,
+      "domain": "OTU",
+      "n": 382,
+      "dice": 0.7925248323610286,
+      "iou": 0.7052226183811329,
+      "hd95": 60.4359311657602
+    },
+    {
+      "method": "lvit_native224",
+      "seed": 42,
+      "domain": "prostate",
+      "n": 16,
+      "dice": 0.8587602924350023,
+      "iou": 0.7570174864495118,
+      "hd95": 62.872015595436096
+    },
+    {
+      "method": "lvit_native224",
+      "seed": 3407,
+      "domain": "thyroid",
+      "n": 286,
+      "dice": 0.8193936102562651,
+      "iou": 0.7208039630728957,
+      "hd95": 33.52626612136414
+    },
+    {
+      "method": "lvit_native224",
+      "seed": 3407,
+      "domain": "TN3K",
+      "n": 614,
+      "dice": 0.784089727217142,
+      "iou": 0.6867871835534832,
+      "hd95": 51.97155413560846
+    },
+    {
+      "method": "lvit_native224",
+      "seed": 3407,
+      "domain": "BUSI_WHU",
+      "n": 186,
+      "dice": 0.8637722306168739,
+      "iou": 0.7752397745093352,
+      "hd95": 26.873164217959168
+    },
+    {
+      "method": "lvit_native224",
+      "seed": 3407,
+      "domain": "BUS-BRA",
+      "n": 283,
+      "dice": 0.8660124901219737,
+      "iou": 0.7782016802967111,
+      "hd95": 30.602709819065808
+    },
+    {
+      "method": "lvit_native224",
+      "seed": 3407,
+      "domain": "OTU",
+      "n": 382,
+      "dice": 0.7932371482824342,
+      "iou": 0.7047725709836915,
+      "hd95": 61.78141382786123
+    },
+    {
+      "method": "lvit_native224",
+      "seed": 3407,
+      "domain": "prostate",
+      "n": 16,
+      "dice": 0.8621900307523159,
+      "iou": 0.7620807039270084,
+      "hd95": 69.51988291740417
+    },
+    {
+      "method": "lvit_native224",
+      "seed": 2026,
+      "domain": "thyroid",
+      "n": 286,
+      "dice": 0.8031812368223904,
+      "iou": 0.7079742240713106,
+      "hd95": 32.84100891993596
+    },
+    {
+      "method": "lvit_native224",
+      "seed": 2026,
+      "domain": "TN3K",
+      "n": 614,
+      "dice": 0.7717161917970989,
+      "iou": 0.6734020939395686,
+      "hd95": 61.959271356293996
+    },
+    {
+      "method": "lvit_native224",
+      "seed": 2026,
+      "domain": "BUSI_WHU",
+      "n": 186,
+      "dice": 0.8555034761081762,
+      "iou": 0.7639324062811965,
+      "hd95": 32.20408142766645
+    },
+    {
+      "method": "lvit_native224",
+      "seed": 2026,
+      "domain": "BUS-BRA",
+      "n": 283,
+      "dice": 0.860097456778163,
+      "iou": 0.7724180729050304,
+      "hd95": 38.18930889606143
+    },
+    {
+      "method": "lvit_native224",
+      "seed": 2026,
+      "domain": "OTU",
+      "n": 382,
+      "dice": 0.8063659626333349,
+      "iou": 0.7209648499533772,
+      "hd95": 55.80304021855808
+    },
+    {
+      "method": "lvit_native224",
+      "seed": 2026,
+      "domain": "prostate",
+      "n": 16,
+      "dice": 0.8599385143496249,
+      "iou": 0.7608723018090621,
+      "hd95": 72.54037809371948
+    },
+    {
+      "method": "sammed2d_promptfree",
+      "seed": 42,
+      "domain": "thyroid",
+      "n": 286,
+      "dice": 0.832486532289892,
+      "iou": 0.7451862596943892,
+      "hd95": 30.123181912448857
+    },
+    {
+      "method": "sammed2d_promptfree",
+      "seed": 42,
+      "domain": "TN3K",
+      "n": 614,
+      "dice": 0.8053073678340396,
+      "iou": 0.709698672020673,
+      "hd95": 43.814408498788886
+    },
+    {
+      "method": "sammed2d_promptfree",
+      "seed": 42,
+      "domain": "BUSI_WHU",
+      "n": 186,
+      "dice": 0.8820129447696323,
+      "iou": 0.8033298597445635,
+      "hd95": 22.422140950797708
+    },
+    {
+      "method": "sammed2d_promptfree",
+      "seed": 42,
+      "domain": "BUS-BRA",
+      "n": 283,
+      "dice": 0.8882519361120197,
+      "iou": 0.8170526890527581,
+      "hd95": 21.321251715872396
+    },
+    {
+      "method": "sammed2d_promptfree",
+      "seed": 42,
+      "domain": "OTU",
+      "n": 382,
+      "dice": 0.8495311507453661,
+      "iou": 0.7737347001879048,
+      "hd95": 39.10426159179647
+    },
+    {
+      "method": "sammed2d_promptfree",
+      "seed": 42,
+      "domain": "prostate",
+      "n": 16,
+      "dice": 0.9367577946150178,
+      "iou": 0.8826942051607196,
+      "hd95": 18.757661283016205
+    },
+    {
+      "method": "sammed2d_promptfree",
+      "seed": 3407,
+      "domain": "thyroid",
+      "n": 286,
+      "dice": 0.8428423703905439,
+      "iou": 0.7563522468135517,
+      "hd95": 30.591062122291618
+    },
+    {
+      "method": "sammed2d_promptfree",
+      "seed": 3407,
+      "domain": "TN3K",
+      "n": 614,
+      "dice": 0.8227413449387704,
+      "iou": 0.7282447487374079,
+      "hd95": 39.085303190088425
+    },
+    {
+      "method": "sammed2d_promptfree",
+      "seed": 3407,
+      "domain": "BUSI_WHU",
+      "n": 186,
+      "dice": 0.8772985300898065,
+      "iou": 0.7951248396334134,
+      "hd95": 24.002296004244076
+    },
+    {
+      "method": "sammed2d_promptfree",
+      "seed": 3407,
+      "domain": "BUS-BRA",
+      "n": 283,
+      "dice": 0.8923325533141182,
+      "iou": 0.8222122686737101,
+      "hd95": 20.34547793654587
+    },
+    {
+      "method": "sammed2d_promptfree",
+      "seed": 3407,
+      "domain": "OTU",
+      "n": 382,
+      "dice": 0.8687157554939333,
+      "iou": 0.7979158614062998,
+      "hd95": 37.18078513825751
+    },
+    {
+      "method": "sammed2d_promptfree",
+      "seed": 3407,
+      "domain": "prostate",
+      "n": 16,
+      "dice": 0.9425038637864682,
+      "iou": 0.8922335309853628,
+      "hd95": 17.027384787797928
+    },
+    {
+      "method": "sammed2d_promptfree",
+      "seed": 2026,
+      "domain": "thyroid",
+      "n": 286,
+      "dice": 0.8387945581677964,
+      "iou": 0.7502597769632715,
+      "hd95": 28.72093016867871
+    },
+    {
+      "method": "sammed2d_promptfree",
+      "seed": 2026,
+      "domain": "TN3K",
+      "n": 614,
+      "dice": 0.8134198748418656,
+      "iou": 0.7202603468398803,
+      "hd95": 40.92678909736658
+    },
+    {
+      "method": "sammed2d_promptfree",
+      "seed": 2026,
+      "domain": "BUSI_WHU",
+      "n": 186,
+      "dice": 0.8795928208609325,
+      "iou": 0.8027059873190451,
+      "hd95": 23.62793012716437
+    },
+    {
+      "method": "sammed2d_promptfree",
+      "seed": 2026,
+      "domain": "BUS-BRA",
+      "n": 283,
+      "dice": 0.8911054242927878,
+      "iou": 0.8206275200497223,
+      "hd95": 20.682740607447002
+    },
+    {
+      "method": "sammed2d_promptfree",
+      "seed": 2026,
+      "domain": "OTU",
+      "n": 382,
+      "dice": 0.86225178396366,
+      "iou": 0.789083200910412,
+      "hd95": 36.944671213938925
+    },
+    {
+      "method": "sammed2d_promptfree",
+      "seed": 2026,
+      "domain": "prostate",
+      "n": 16,
+      "dice": 0.9411605082055652,
+      "iou": 0.8900791998276982,
+      "hd95": 18.181777119636536
+    },
+    {
+      "method": "iris2d",
+      "seed": 42,
+      "domain": "BUS-BRA",
+      "n": 283,
+      "dice": 0.8775168914463931,
+      "iou": 0.8036989996326062,
+      "hd95": 28.45292852539898
+    },
+    {
+      "method": "iris2d",
+      "seed": 42,
+      "domain": "BUSI_WHU",
+      "n": 186,
+      "dice": 0.875403541857802,
+      "iou": 0.7947773544337313,
+      "hd95": 31.43378979929032
+    },
+    {
+      "method": "iris2d",
+      "seed": 42,
+      "domain": "OTU",
+      "n": 382,
+      "dice": 0.8524183979139404,
+      "iou": 0.773563899633754,
+      "hd95": 45.55778986995757
+    },
+    {
+      "method": "iris2d",
+      "seed": 42,
+      "domain": "TN3K",
+      "n": 614,
+      "dice": 0.8140052184128443,
+      "iou": 0.716426208060397,
+      "hd95": 44.61798189595002
+    },
+    {
+      "method": "iris2d",
+      "seed": 42,
+      "domain": "prostate",
+      "n": 16,
+      "dice": 0.9264025302039094,
+      "iou": 0.8645465661634688,
+      "hd95": 21.99299943447113
+    },
+    {
+      "method": "iris2d",
+      "seed": 42,
+      "domain": "thyroid",
+      "n": 286,
+      "dice": 0.8416181524160687,
+      "iou": 0.7570783140934452,
+      "hd95": 34.24508039434473
+    },
+    {
+      "method": "iris2d",
+      "seed": 3407,
+      "domain": "BUS-BRA",
+      "n": 283,
+      "dice": 0.883844672770866,
+      "iou": 0.8092065533551147,
+      "hd95": 29.483834639876132
+    },
+    {
+      "method": "iris2d",
+      "seed": 3407,
+      "domain": "BUSI_WHU",
+      "n": 186,
+      "dice": 0.8704853132790862,
+      "iou": 0.78661969742266,
+      "hd95": 30.615811474861637
+    },
+    {
+      "method": "iris2d",
+      "seed": 3407,
+      "domain": "OTU",
+      "n": 382,
+      "dice": 0.8597503478814037,
+      "iou": 0.7835906158092156,
+      "hd95": 44.60863161399102
+    },
+    {
+      "method": "iris2d",
+      "seed": 3407,
+      "domain": "TN3K",
+      "n": 614,
+      "dice": 0.8184928482584725,
+      "iou": 0.7220127771059363,
+      "hd95": 43.87121294841704
+    },
+    {
+      "method": "iris2d",
+      "seed": 3407,
+      "domain": "prostate",
+      "n": 16,
+      "dice": 0.9157464037733463,
+      "iou": 0.847173227517729,
+      "hd95": 26.366123616695404
+    },
+    {
+      "method": "iris2d",
+      "seed": 3407,
+      "domain": "thyroid",
+      "n": 286,
+      "dice": 0.8437398849543833,
+      "iou": 0.7572458150730289,
+      "hd95": 30.53083497077435
+    },
+    {
+      "method": "iris2d",
+      "seed": 2026,
+      "domain": "BUS-BRA",
+      "n": 283,
+      "dice": 0.8840664018879889,
+      "iou": 0.8115829465256826,
+      "hd95": 28.97866966025147
+    },
+    {
+      "method": "iris2d",
+      "seed": 2026,
+      "domain": "BUSI_WHU",
+      "n": 186,
+      "dice": 0.872279400647622,
+      "iou": 0.7896891542755482,
+      "hd95": 33.753951197029444
+    },
+    {
+      "method": "iris2d",
+      "seed": 2026,
+      "domain": "OTU",
+      "n": 382,
+      "dice": 0.8627229999092364,
+      "iou": 0.7852299844516629,
+      "hd95": 45.552501139216396
+    },
+    {
+      "method": "iris2d",
+      "seed": 2026,
+      "domain": "TN3K",
+      "n": 614,
+      "dice": 0.8143371132012467,
+      "iou": 0.717850358673203,
+      "hd95": 50.63516214460814
+    },
+    {
+      "method": "iris2d",
+      "seed": 2026,
+      "domain": "prostate",
+      "n": 16,
+      "dice": 0.9241554333017787,
+      "iou": 0.8612801675744262,
+      "hd95": 22.71112161874771
+    },
+    {
+      "method": "iris2d",
+      "seed": 2026,
+      "domain": "thyroid",
+      "n": 286,
+      "dice": 0.8499173740955103,
+      "iou": 0.7642299138567795,
+      "hd95": 34.27614418609993
+    },
+    {
+      "method": "tasksegment_no_text_conditioning",
+      "seed": 42,
+      "domain": "BUS-BRA",
+      "n": 283,
+      "dice": 0.9024813858543747,
+      "iou": 0.8341243317478392,
+      "hd95": 21.02748519792995
+    },
+    {
+      "method": "tasksegment_no_text_conditioning",
+      "seed": 42,
+      "domain": "BUSI_WHU",
+      "n": 186,
+      "dice": 0.8871327074237496,
+      "iou": 0.8070089193927268,
+      "hd95": 23.016238276676464
+    },
+    {
+      "method": "tasksegment_no_text_conditioning",
+      "seed": 42,
+      "domain": "OTU",
+      "n": 382,
+      "dice": 0.8699536802291884,
+      "iou": 0.7989605405185753,
+      "hd95": 39.78269678135817
+    },
+    {
+      "method": "tasksegment_no_text_conditioning",
+      "seed": 42,
+      "domain": "TN3K",
+      "n": 614,
+      "dice": 0.8352376070007372,
+      "iou": 0.7450315279032417,
+      "hd95": 38.38160541080885
+    },
+    {
+      "method": "tasksegment_no_text_conditioning",
+      "seed": 42,
+      "domain": "prostate",
+      "n": 16,
+      "dice": 0.934050194468451,
+      "iou": 0.8779166963040443,
+      "hd95": 21.532299369573593
+    },
+    {
+      "method": "tasksegment_no_text_conditioning",
+      "seed": 42,
+      "domain": "thyroid",
+      "n": 286,
+      "dice": 0.8493312087315555,
+      "iou": 0.7693726356163374,
+      "hd95": 26.182462428833222
+    },
+    {
+      "method": "tasksegment_no_text_conditioning",
+      "seed": 3407,
+      "domain": "BUS-BRA",
+      "n": 283,
+      "dice": 0.893489080075064,
+      "iou": 0.8238046886589039,
+      "hd95": 24.68587606366026
+    },
+    {
+      "method": "tasksegment_no_text_conditioning",
+      "seed": 3407,
+      "domain": "BUSI_WHU",
+      "n": 186,
+      "dice": 0.8898376006104773,
+      "iou": 0.8113123365229719,
+      "hd95": 26.109041926681353
+    },
+    {
+      "method": "tasksegment_no_text_conditioning",
+      "seed": 3407,
+      "domain": "OTU",
+      "n": 382,
+      "dice": 0.8660068815807321,
+      "iou": 0.7929855747988404,
+      "hd95": 40.91564681579929
+    },
+    {
+      "method": "tasksegment_no_text_conditioning",
+      "seed": 3407,
+      "domain": "TN3K",
+      "n": 614,
+      "dice": 0.8400256049572019,
+      "iou": 0.7490431614725369,
+      "hd95": 39.05705644952358
+    },
+    {
+      "method": "tasksegment_no_text_conditioning",
+      "seed": 3407,
+      "domain": "prostate",
+      "n": 16,
+      "dice": 0.9295980633680394,
+      "iou": 0.8705898830225033,
+      "hd95": 21.355207949876785
+    },
+    {
+      "method": "tasksegment_no_text_conditioning",
+      "seed": 3407,
+      "domain": "thyroid",
+      "n": 286,
+      "dice": 0.8619498107411911,
+      "iou": 0.7805035071488412,
+      "hd95": 26.410815134748713
+    },
+    {
+      "method": "tasksegment_no_text_conditioning",
+      "seed": 2026,
+      "domain": "BUS-BRA",
+      "n": 283,
+      "dice": 0.9018579562796785,
+      "iou": 0.8335628926649782,
+      "hd95": 22.303420589163952
+    },
+    {
+      "method": "tasksegment_no_text_conditioning",
+      "seed": 2026,
+      "domain": "BUSI_WHU",
+      "n": 186,
+      "dice": 0.8795633804582329,
+      "iou": 0.7990440743881803,
+      "hd95": 26.22030847046965
+    },
+    {
+      "method": "tasksegment_no_text_conditioning",
+      "seed": 2026,
+      "domain": "OTU",
+      "n": 382,
+      "dice": 0.868088251183919,
+      "iou": 0.7961810194645781,
+      "hd95": 38.31625688138433
+    },
+    {
+      "method": "tasksegment_no_text_conditioning",
+      "seed": 2026,
+      "domain": "TN3K",
+      "n": 614,
+      "dice": 0.8337648443544529,
+      "iou": 0.7432914487243726,
+      "hd95": 39.91735037374963
+    },
+    {
+      "method": "tasksegment_no_text_conditioning",
+      "seed": 2026,
+      "domain": "prostate",
+      "n": 16,
+      "dice": 0.9300638110057091,
+      "iou": 0.8707015154371986,
+      "hd95": 21.06064409017563
+    },
+    {
+      "method": "tasksegment_no_text_conditioning",
+      "seed": 2026,
+      "domain": "thyroid",
+      "n": 286,
+      "dice": 0.8611435753673019,
+      "iou": 0.7804248741476516,
+      "hd95": 25.577421361749824
+    },
+    {
+      "method": "tasksegment_no_visual_prototype",
+      "seed": 42,
+      "domain": "BUS-BRA",
+      "n": 283,
+      "dice": 0.901276302751726,
+      "iou": 0.8343144444280163,
+      "hd95": 21.438068408426883
+    },
+    {
+      "method": "tasksegment_no_visual_prototype",
+      "seed": 42,
+      "domain": "BUSI_WHU",
+      "n": 186,
+      "dice": 0.8898023959664582,
+      "iou": 0.8117587731476658,
+      "hd95": 21.20559589196277
+    },
+    {
+      "method": "tasksegment_no_visual_prototype",
+      "seed": 42,
+      "domain": "OTU",
+      "n": 382,
+      "dice": 0.8697380163442272,
+      "iou": 0.7988098913662868,
+      "hd95": 38.590092304489374
+    },
+    {
+      "method": "tasksegment_no_visual_prototype",
+      "seed": 42,
+      "domain": "TN3K",
+      "n": 614,
+      "dice": 0.8336148404536761,
+      "iou": 0.7422927902397521,
+      "hd95": 36.642466097002306
+    },
+    {
+      "method": "tasksegment_no_visual_prototype",
+      "seed": 42,
+      "domain": "prostate",
+      "n": 16,
+      "dice": 0.9297560046865303,
+      "iou": 0.8709719633605328,
+      "hd95": 21.600372850894928
+    },
+    {
+      "method": "tasksegment_no_visual_prototype",
+      "seed": 42,
+      "domain": "thyroid",
+      "n": 286,
+      "dice": 0.8573299157830907,
+      "iou": 0.7775286047411071,
+      "hd95": 25.22288728510583
+    },
+    {
+      "method": "tasksegment_no_visual_prototype",
+      "seed": 3407,
+      "domain": "BUS-BRA",
+      "n": 283,
+      "dice": 0.8931589933688263,
+      "iou": 0.8240608432523369,
+      "hd95": 23.167607765736935
+    },
+    {
+      "method": "tasksegment_no_visual_prototype",
+      "seed": 3407,
+      "domain": "BUSI_WHU",
+      "n": 186,
+      "dice": 0.894460698110903,
+      "iou": 0.8184842433818038,
+      "hd95": 20.307751781197005
+    },
+    {
+      "method": "tasksegment_no_visual_prototype",
+      "seed": 3407,
+      "domain": "OTU",
+      "n": 382,
+      "dice": 0.8698271321984701,
+      "iou": 0.7995065538987993,
+      "hd95": 39.94668715911386
+    },
+    {
+      "method": "tasksegment_no_visual_prototype",
+      "seed": 3407,
+      "domain": "TN3K",
+      "n": 614,
+      "dice": 0.8316254230516209,
+      "iou": 0.741289401136843,
+      "hd95": 40.374174668656885
+    },
+    {
+      "method": "tasksegment_no_visual_prototype",
+      "seed": 3407,
+      "domain": "prostate",
+      "n": 16,
+      "dice": 0.9252933652451283,
+      "iou": 0.8629484702208841,
+      "hd95": 23.188478708267212
+    },
+    {
+      "method": "tasksegment_no_visual_prototype",
+      "seed": 3407,
+      "domain": "thyroid",
+      "n": 286,
+      "dice": 0.8569076798757205,
+      "iou": 0.7760651075656774,
+      "hd95": 26.676680877492146
+    },
+    {
+      "method": "tasksegment_no_visual_prototype",
+      "seed": 2026,
+      "domain": "BUS-BRA",
+      "n": 283,
+      "dice": 0.8935396371837439,
+      "iou": 0.8261400954551811,
+      "hd95": 21.988300107814396
+    },
+    {
+      "method": "tasksegment_no_visual_prototype",
+      "seed": 2026,
+      "domain": "BUSI_WHU",
+      "n": 186,
+      "dice": 0.8900120119233509,
+      "iou": 0.8122737238656242,
+      "hd95": 22.655370127770208
+    },
+    {
+      "method": "tasksegment_no_visual_prototype",
+      "seed": 2026,
+      "domain": "OTU",
+      "n": 382,
+      "dice": 0.8697158123534949,
+      "iou": 0.799100268746202,
+      "hd95": 38.0349239541598
+    },
+    {
+      "method": "tasksegment_no_visual_prototype",
+      "seed": 2026,
+      "domain": "TN3K",
+      "n": 614,
+      "dice": 0.8314274303486371,
+      "iou": 0.739567702607445,
+      "hd95": 39.374963083174016
+    },
+    {
+      "method": "tasksegment_no_visual_prototype",
+      "seed": 2026,
+      "domain": "prostate",
+      "n": 16,
+      "dice": 0.9311131316629606,
+      "iou": 0.8728616022202729,
+      "hd95": 22.37696522474289
+    },
+    {
+      "method": "tasksegment_no_visual_prototype",
+      "seed": 2026,
+      "domain": "thyroid",
+      "n": 286,
+      "dice": 0.8485942912206514,
+      "iou": 0.7680410769041369,
+      "hd95": 27.66165467992529
+    },
+    {
+      "method": "tasksegment_no_dense_guidance_nobank",
+      "seed": 42,
+      "domain": "BUS-BRA",
+      "n": 283,
+      "dice": 0.8899136270396618,
+      "iou": 0.819126593858318,
+      "hd95": 25.8648506693621
+    },
+    {
+      "method": "tasksegment_no_dense_guidance_nobank",
+      "seed": 42,
+      "domain": "BUSI_WHU",
+      "n": 186,
+      "dice": 0.8807381154601887,
+      "iou": 0.802675821933049,
+      "hd95": 29.501707543608962
+    },
+    {
+      "method": "tasksegment_no_dense_guidance_nobank",
+      "seed": 42,
+      "domain": "OTU",
+      "n": 382,
+      "dice": 0.8606718822166718,
+      "iou": 0.7834925873726404,
+      "hd95": 43.88089614513657
+    },
+    {
+      "method": "tasksegment_no_dense_guidance_nobank",
+      "seed": 42,
+      "domain": "TN3K",
+      "n": 614,
+      "dice": 0.8280173283967805,
+      "iou": 0.7346962213283091,
+      "hd95": 42.673364356597006
+    },
+    {
+      "method": "tasksegment_no_dense_guidance_nobank",
+      "seed": 42,
+      "domain": "prostate",
+      "n": 16,
+      "dice": 0.9300671972059847,
+      "iou": 0.8714580539231677,
+      "hd95": 21.03307420015335
+    },
+    {
+      "method": "tasksegment_no_dense_guidance_nobank",
+      "seed": 42,
+      "domain": "thyroid",
+      "n": 286,
+      "dice": 0.847455724823351,
+      "iou": 0.76424639090482,
+      "hd95": 30.475051583943667
+    },
+    {
+      "method": "tasksegment_no_dense_guidance_nobank",
+      "seed": 3407,
+      "domain": "BUS-BRA",
+      "n": 283,
+      "dice": 0.8929789507747758,
+      "iou": 0.8222706628412761,
+      "hd95": 23.72552640614998
+    },
+    {
+      "method": "tasksegment_no_dense_guidance_nobank",
+      "seed": 3407,
+      "domain": "BUSI_WHU",
+      "n": 186,
+      "dice": 0.8844714088266495,
+      "iou": 0.8058659166895901,
+      "hd95": 26.28360168267322
+    },
+    {
+      "method": "tasksegment_no_dense_guidance_nobank",
+      "seed": 3407,
+      "domain": "OTU",
+      "n": 382,
+      "dice": 0.8578152839465222,
+      "iou": 0.7812177002018741,
+      "hd95": 44.37495373056821
+    },
+    {
+      "method": "tasksegment_no_dense_guidance_nobank",
+      "seed": 3407,
+      "domain": "TN3K",
+      "n": 614,
+      "dice": 0.8322241351835109,
+      "iou": 0.7401066903559504,
+      "hd95": 42.35490739229059
+    },
+    {
+      "method": "tasksegment_no_dense_guidance_nobank",
+      "seed": 3407,
+      "domain": "prostate",
+      "n": 16,
+      "dice": 0.9271917443279958,
+      "iou": 0.8662683970969369,
+      "hd95": 22.92691320180893
+    },
+    {
+      "method": "tasksegment_no_dense_guidance_nobank",
+      "seed": 3407,
+      "domain": "thyroid",
+      "n": 286,
+      "dice": 0.8567057718692263,
+      "iou": 0.7748808973184022,
+      "hd95": 27.35079200034375
+    },
+    {
+      "method": "tasksegment_no_dense_guidance_nobank",
+      "seed": 2026,
+      "domain": "BUS-BRA",
+      "n": 283,
+      "dice": 0.8896879049862808,
+      "iou": 0.8182579068247163,
+      "hd95": 26.633576834580925
+    },
+    {
+      "method": "tasksegment_no_dense_guidance_nobank",
+      "seed": 2026,
+      "domain": "BUSI_WHU",
+      "n": 186,
+      "dice": 0.8809351514329409,
+      "iou": 0.8027026175471299,
+      "hd95": 27.40023221251785
+    },
+    {
+      "method": "tasksegment_no_dense_guidance_nobank",
+      "seed": 2026,
+      "domain": "OTU",
+      "n": 382,
+      "dice": 0.8561761867001574,
+      "iou": 0.7793877704341192,
+      "hd95": 49.090153009479586
+    },
+    {
+      "method": "tasksegment_no_dense_guidance_nobank",
+      "seed": 2026,
+      "domain": "TN3K",
+      "n": 614,
+      "dice": 0.8322588439575039,
+      "iou": 0.7401029579498031,
+      "hd95": 40.5107565477539
+    },
+    {
+      "method": "tasksegment_no_dense_guidance_nobank",
+      "seed": 2026,
+      "domain": "prostate",
+      "n": 16,
+      "dice": 0.9316242693887454,
+      "iou": 0.8736569468689388,
+      "hd95": 22.850762337446213
+    },
+    {
+      "method": "tasksegment_no_dense_guidance_nobank",
+      "seed": 2026,
+      "domain": "thyroid",
+      "n": 286,
+      "dice": 0.8566107824872968,
+      "iou": 0.7751571848855722,
+      "hd95": 27.510638918909994
+    },
+    {
+      "method": "tasksegment_no_task_conditioned_decoder",
+      "seed": 42,
+      "domain": "BUS-BRA",
+      "n": 283,
+      "dice": 0.8963208392398417,
+      "iou": 0.8253363610692611,
+      "hd95": 25.38369782232143
+    },
+    {
+      "method": "tasksegment_no_task_conditioned_decoder",
+      "seed": 42,
+      "domain": "BUSI_WHU",
+      "n": 186,
+      "dice": 0.8832624967552692,
+      "iou": 0.801890887242837,
+      "hd95": 25.933141100791193
+    },
+    {
+      "method": "tasksegment_no_task_conditioned_decoder",
+      "seed": 42,
+      "domain": "OTU",
+      "n": 382,
+      "dice": 0.8636224190469952,
+      "iou": 0.7881815577175334,
+      "hd95": 44.2794660142579
+    },
+    {
+      "method": "tasksegment_no_task_conditioned_decoder",
+      "seed": 42,
+      "domain": "TN3K",
+      "n": 614,
+      "dice": 0.829114895083786,
+      "iou": 0.7349962560408407,
+      "hd95": 41.963724866363826
+    },
+    {
+      "method": "tasksegment_no_task_conditioned_decoder",
+      "seed": 42,
+      "domain": "prostate",
+      "n": 16,
+      "dice": 0.9266921406919831,
+      "iou": 0.8654261157111558,
+      "hd95": 23.18057030439377
+    },
+    {
+      "method": "tasksegment_no_task_conditioned_decoder",
+      "seed": 42,
+      "domain": "thyroid",
+      "n": 286,
+      "dice": 0.8506491491525715,
+      "iou": 0.7645150342954572,
+      "hd95": 30.641538086471023
+    },
+    {
+      "method": "tasksegment_no_task_conditioned_decoder",
+      "seed": 3407,
+      "domain": "BUS-BRA",
+      "n": 283,
+      "dice": 0.8947573564091672,
+      "iou": 0.8221914282323116,
+      "hd95": 24.815336073245263
+    },
+    {
+      "method": "tasksegment_no_task_conditioned_decoder",
+      "seed": 3407,
+      "domain": "BUSI_WHU",
+      "n": 186,
+      "dice": 0.8760277893848467,
+      "iou": 0.793782205796628,
+      "hd95": 29.143235052785567
+    },
+    {
+      "method": "tasksegment_no_task_conditioned_decoder",
+      "seed": 3407,
+      "domain": "OTU",
+      "n": 382,
+      "dice": 0.8685405404149699,
+      "iou": 0.7947829100489784,
+      "hd95": 41.863298079106194
+    },
+    {
+      "method": "tasksegment_no_task_conditioned_decoder",
+      "seed": 3407,
+      "domain": "TN3K",
+      "n": 614,
+      "dice": 0.8162433965250451,
+      "iou": 0.7208416302903166,
+      "hd95": 43.055318700374144
+    },
+    {
+      "method": "tasksegment_no_task_conditioned_decoder",
+      "seed": 3407,
+      "domain": "prostate",
+      "n": 16,
+      "dice": 0.9348604519078334,
+      "iou": 0.8790368062772291,
+      "hd95": 20.623029321432114
+    },
+    {
+      "method": "tasksegment_no_task_conditioned_decoder",
+      "seed": 3407,
+      "domain": "thyroid",
+      "n": 286,
+      "dice": 0.8501807990273427,
+      "iou": 0.7630354739436187,
+      "hd95": 27.86864825645527
+    },
+    {
+      "method": "tasksegment_no_task_conditioned_decoder",
+      "seed": 2026,
+      "domain": "BUS-BRA",
+      "n": 283,
+      "dice": 0.8909408892617405,
+      "iou": 0.8197821516261811,
+      "hd95": 25.926222233384742
+    },
+    {
+      "method": "tasksegment_no_task_conditioned_decoder",
+      "seed": 2026,
+      "domain": "BUSI_WHU",
+      "n": 186,
+      "dice": 0.8742473756162878,
+      "iou": 0.7924749402895795,
+      "hd95": 30.346240241040466
+    },
+    {
+      "method": "tasksegment_no_task_conditioned_decoder",
+      "seed": 2026,
+      "domain": "OTU",
+      "n": 382,
+      "dice": 0.8586492067555186,
+      "iou": 0.7815778745911796,
+      "hd95": 46.35602853373083
+    },
+    {
+      "method": "tasksegment_no_task_conditioned_decoder",
+      "seed": 2026,
+      "domain": "TN3K",
+      "n": 614,
+      "dice": 0.8146755786925977,
+      "iou": 0.7207631034595302,
+      "hd95": 45.58729494045146
+    },
+    {
+      "method": "tasksegment_no_task_conditioned_decoder",
+      "seed": 2026,
+      "domain": "prostate",
+      "n": 16,
+      "dice": 0.9248527130103394,
+      "iou": 0.8623894773012193,
+      "hd95": 22.194801807403564
+    },
+    {
+      "method": "tasksegment_no_task_conditioned_decoder",
+      "seed": 2026,
+      "domain": "thyroid",
+      "n": 286,
+      "dice": 0.8500907812973234,
+      "iou": 0.7633251846306963,
+      "hd95": 29.90282854416987
+    }
+  ]
+}

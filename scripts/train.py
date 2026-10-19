@@ -47,7 +47,7 @@ def _parse_float_tuple(value: str, expected: int):
 
 def parse_args():
     parser = argparse.ArgumentParser(
-        description="Train TaskSegment DomainTextV3 on the unified 512x512 protocol"
+        description="Train US-TextSeg on the KBS 512x512 fixed-support protocol"
     )
     parser.add_argument("--data-root", default="./data")
     parser.add_argument("--text-dir", default="./text_features_llm")
@@ -143,14 +143,14 @@ def parse_args():
     )
 
     parser.add_argument("--epochs", type=int, default=150)
-    parser.add_argument("--batch-size", type=int, default=2)
+    parser.add_argument("--batch-size", type=int, default=4)
     parser.add_argument("--episodes-per-epoch", type=int, default=1500)
     parser.add_argument("--lr", type=float, default=5e-5)
     parser.add_argument("--min-lr", type=float, default=1e-6)
     parser.add_argument("--weight-decay", type=float, default=1e-4)
     parser.add_argument("--patience", type=int, default=20)
     parser.add_argument("--grad-accum-steps", type=int, default=4)
-    parser.add_argument("--warmup-epochs", type=int, default=3)
+    parser.add_argument("--warmup-epochs", type=int, default=5)
     parser.add_argument("--train-query-positive-ratio", type=float, default=0.7)
 
     amp = parser.add_mutually_exclusive_group()

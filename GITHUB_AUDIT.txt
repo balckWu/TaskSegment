@@ -1,5 +1,10 @@
-TaskSegment GitHub integration audit
+Historical TaskSegment GitHub integration audit
 ====================================
+
+This is the earlier integration record. The current US-TextSeg KBS release
+is documented in docs/PAPER_REPRODUCTION.md, docs/server_source_map.json,
+and docs/VALIDATION_20261019.md. Historical names remain for checkpoint
+compatibility. Iris-2D and the reported four-ablation recipe are now included.
 
 Core base: TSV6
 TSV3-only code added only when the relative path was absent from TSV6.

@@ -1,0 +1,337 @@
+{
+  "schema_version": 6,
+  "project_name": "US-TextSeg_KBS_3Seeds",
+  "artifacts_root": "./paper_artifacts_kbs",
+  "database": "./paper_artifacts_kbs/experiment_results.sqlite",
+  "protocol": {
+    "data_root": "./data",
+    "text_dir": "./text_features_llm",
+    "seeds": [
+      42,
+      3407,
+      2026
+    ],
+    "gpus": [
+      0
+    ],
+    "batch_size": 4,
+    "val_batch_size": 4,
+    "grad_accum_steps": 4,
+    "effective_batch_size": 16,
+    "episodes_per_epoch": 1500,
+    "epochs": 150,
+    "warmup_epochs": 5,
+    "patience": 20,
+    "threshold": 0.5,
+    "metric_size": [
+      512,
+      512
+    ],
+    "domain_sampling_alpha": 0.0,
+    "deterministic": true,
+    "amp": true,
+    "cache_dataset": true,
+    "preload_val_cache": true,
+    "preload_test_cache": true,
+    "postprocess": false,
+    "progress": "off",
+    "monitor_interval_seconds": 30,
+    "prototype_blend_target": 0.0,
+    "prototype_warmup_epochs": 5,
+    "prototype_ramp_epochs": 10,
+    "prototype_refresh_samples": 4,
+    "prototype_eval_support_samples": 4,
+    "prototype_refresh_batch_size": 4,
+    "prototype_refresh_interval": 1,
+    "prototype_bank_blending_default": false
+  },
+  "paths": {
+    "clipseg_model": "./pretrained/clipseg-rd64-refined",
+    "lvit_repo": "./third_party/LViT",
+    "lvit_text_encoder": "./pretrained/bert-base-uncased",
+    "sammed2d_repo": "./third_party/SAM-Med2D",
+    "sammed2d_checkpoint": "./pretrained/sam-med2d/sam-med2d_b.pth",
+    "transunet_pretrained": "./pretrained/transunet/R50+ViT-B_16.npz"
+  },
+  "experiments": [
+    {
+      "name": "tasksegment_full",
+      "family": "tasksegment",
+      "variant": "full",
+      "env": "TS",
+      "input_size": [
+        512,
+        512
+      ],
+      "weight": 4,
+      "enabled": true,
+      "main_table": true,
+      "description": "Final US-TextSeg: episode visual prototypes during training and fixed K=4 training-support prototypes for validation/test; no large prototype-bank blending.",
+      "allowed_gpus": [
+        0
+      ]
+    },
+    {
+      "name": "tasksegment_with_prototype_bank",
+      "family": "tasksegment",
+      "variant": "with_prototype_bank",
+      "env": "TS",
+      "input_size": [
+        512,
+        512
+      ],
+      "weight": 4,
+      "enabled": false,
+      "main_table": false,
+      "description": "Supplementary optional 128-support domain prototype bank with scheduled blending.",
+      "allowed_gpus": [
+        0
+      ]
+    },
+    {
+      "name": "tasksegment_no_semantic_text",
+      "family": "tasksegment",
+      "variant": "no_semantic_text",
+      "env": "TS",
+      "input_size": [
+        512,
+        512
+      ],
+      "weight": 4,
+      "enabled": false,
+      "main_table": false,
+      "description": "Supplementary: removes BioBERT semantic vectors only; domain and group embeddings remain.",
+      "allowed_gpus": [
+        0
+      ]
+    },
+    {
+      "name": "tasksegment_no_text_conditioning",
+      "family": "tasksegment",
+      "variant": "no_text_conditioning",
+      "env": "TS",
+      "input_size": [
+        512,
+        512
+      ],
+      "weight": 4,
+      "allowed_gpus": [
+        0
+      ],
+      "enabled": true,
+      "main_table": false,
+      "description": "Main ablation: removes BioBERT semantics, domain embeddings, and group embeddings while preserving five zero condition-token slots."
+    },
+    {
+      "name": "tasksegment_no_prototype_bank_blending",
+      "family": "tasksegment",
+      "variant": "no_prototype_bank_blending",
+      "env": "TS",
+      "input_size": [
+        512,
+        512
+      ],
+      "weight": 4,
+      "enabled": false,
+      "main_table": false,
+      "description": "Legacy name for the no-bank formulation that is now the final tasksegment_full.",
+      "allowed_gpus": [
+        0
+      ]
+    },
+    {
+      "name": "tasksegment_no_visual_prototype",
+      "family": "tasksegment",
+      "variant": "no_visual_prototype",
+      "env": "TS",
+      "input_size": [
+        512,
+        512
+      ],
+      "weight": 4,
+      "enabled": true,
+      "main_table": false,
+      "description": "Main no-bank ablation: no support image/mask is read; parameter-free null visual tokens preserve token topology.",
+      "allowed_gpus": [
+        0
+      ]
+    },
+    {
+      "name": "tasksegment_no_dense_guidance",
+      "family": "tasksegment",
+      "variant": "no_dense_guidance",
+      "env": "TS",
+      "input_size": [
+        512,
+        512
+      ],
+      "weight": 4,
+      "enabled": true,
+      "main_table": false,
+      "allowed_gpus": [
+        0
+      ],
+      "description": "Main no-bank ablation: removes condition-induced dense guidance and its dense supervision loss."
+    },
+    {
+      "name": "unet",
+      "family": "baseline",
+      "variant": "unet",
+      "env": "TS",
+      "input_size": [
+        512,
+        512
+      ],
+      "weight": 1,
+      "allowed_gpus": [
+        0
+      ],
+      "enabled": true,
+      "main_table": true,
+      "description": ""
+    },
+    {
+      "name": "unetpp",
+      "family": "baseline",
+      "variant": "unetpp",
+      "env": "TS",
+      "input_size": [
+        512,
+        512
+      ],
+      "weight": 1,
+      "allowed_gpus": [
+        0
+      ],
+      "enabled": true,
+      "main_table": true,
+      "description": ""
+    },
+    {
+      "name": "swinunet_official",
+      "family": "baseline",
+      "variant": "swinunet_official",
+      "env": "TS",
+      "input_size": [
+        512,
+        512
+      ],
+      "weight": 2,
+      "allowed_gpus": [
+        0
+      ],
+      "enabled": true,
+      "main_table": true,
+      "description": ""
+    },
+    {
+      "name": "transunet_pretrained",
+      "family": "baseline",
+      "variant": "transunet_pretrained",
+      "env": "TS",
+      "input_size": [
+        512,
+        512
+      ],
+      "weight": 2,
+      "allowed_gpus": [
+        0
+      ],
+      "enabled": true,
+      "main_table": true,
+      "pretraining": "ImageNet-21k R50+ViT-B_16.npz",
+      "description": ""
+    },
+    {
+      "name": "transunet_scratch",
+      "family": "baseline",
+      "variant": "transunet_scratch",
+      "env": "TS",
+      "input_size": [
+        512,
+        512
+      ],
+      "weight": 2,
+      "allowed_gpus": [
+        0
+      ],
+      "enabled": false,
+      "main_table": false,
+      "pretraining": "none",
+      "description": ""
+    },
+    {
+      "name": "clipseg_official",
+      "family": "clipseg",
+      "variant": "decoder_only",
+      "env": "TS",
+      "input_size": [
+        512,
+        512
+      ],
+      "weight": 3,
+      "allowed_gpus": [
+        0
+      ],
+      "enabled": true,
+      "main_table": true,
+      "description": ""
+    },
+    {
+      "name": "lvit_native224",
+      "family": "lvit",
+      "variant": "native224_domain_prompts",
+      "env": "TS_LVIT",
+      "input_size": [
+        224,
+        224
+      ],
+      "weight": 2,
+      "allowed_gpus": [
+        0
+      ],
+      "enabled": true,
+      "main_table": true,
+      "description": ""
+    },
+    {
+      "name": "sammed2d_promptfree",
+      "family": "sammed2d",
+      "variant": "promptfree_adapted512",
+      "env": "TS_SAMMED2D",
+      "input_size": [
+        512,
+        512
+      ],
+      "weight": 6,
+      "allowed_gpus": [
+        0
+      ],
+      "enabled": true,
+      "main_table": true,
+      "description": ""
+    },
+    {
+      "name": "tasksegment_no_task_conditioned_decoder",
+      "family": "tasksegment",
+      "variant": "no_task_conditioned_decoder",
+      "env": "TS",
+      "input_size": [
+        512,
+        512
+      ],
+      "weight": 4,
+      "allowed_gpus": [
+        0
+      ],
+      "enabled": true,
+      "main_table": false,
+      "description": "Main ablation: disables bottleneck task attention, visual skip gates and dense guidance."
+    }
+  ],
+  "notes": [
+    "Portable single-GPU scheduling; each training run uses one card.",
+    "Iris-2D uses scripts/launch_iris2d.py separately; its recorded source/protocol fingerprints are preserved.",
+    "Historical full2/no_prototype_bank_blending maps to released full."
+  ]
+}

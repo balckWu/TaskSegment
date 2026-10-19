@@ -21,7 +21,7 @@ from .runner import (
 from .statistics import paired_statistics, write_statistics
 
 
-DEFAULT_CONFIG = "configs/paper_3seeds.json"
+DEFAULT_CONFIG = "configs/kbs_3seeds.json"
 
 
 def comma_values(value: str | None) -> list[str] | None:
@@ -37,7 +37,7 @@ def comma_ints(value: str | None) -> list[int] | None:
 
 def build_parser() -> argparse.ArgumentParser:
     parser = argparse.ArgumentParser(
-        description="Unified TaskSegment paper experiment runner and result database"
+        description="US-TextSeg KBS experiment runner and result database"
     )
     subparsers = parser.add_subparsers(dest="command", required=True)
 
@@ -48,7 +48,7 @@ def build_parser() -> argparse.ArgumentParser:
     add_config(validate)
     validate.add_argument("--allow-missing", action="store_true")
 
-    plan = subparsers.add_parser("plan", help="Create the deterministic six-GPU job plan")
+    plan = subparsers.add_parser("plan", help="Create a deterministic job plan for configured GPUs")
     add_config(plan)
     plan.add_argument("--experiments", default=None, help="Comma-separated experiment names")
     plan.add_argument("--seeds", default=None, help="Comma-separated seeds")

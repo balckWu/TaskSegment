@@ -20,21 +20,25 @@ from paperlab.runner import create_plan
 
 
 class PaperLabTests(unittest.TestCase):
+    def test_default_cli_targets_the_kbs_recipe(self) -> None:
+        from paperlab.cli import build_parser
+        self.assertEqual(build_parser().parse_args(["plan"]).config, "configs/kbs_3seeds.json")
+
     @classmethod
     def setUpClass(cls) -> None:
         cls.root = Path(__file__).resolve().parents[1]
-        cls.config = load_config(cls.root / "configs" / "paper_3seeds.json")
+        cls.config = load_config(cls.root / "configs" / "kbs_3seeds.json")
 
     def test_protocol_and_job_count(self) -> None:
         self.assertEqual(self.config.batch_size, 4)
         self.assertEqual(self.config.steps_per_epoch, 1500)
         jobs = expand_jobs(self.config)
-        self.assertEqual(len(jobs), 33)
+        self.assertEqual(len(jobs), 36)
         self.assertEqual({job.seed for job in jobs}, {42, 3407, 2026})
         self.assertTrue(all(job.effective_batch_size == 16 for job in jobs))
         tasksegment_jobs = [job for job in jobs if job.family == "tasksegment"]
-        expected = {42: 0, 3407: 5, 2026: 6}
-        self.assertTrue(all(job.preferred_gpu == expected[job.seed] for job in tasksegment_jobs))
+        self.assertTrue(all(job.allowed_gpus == (0,) for job in tasksegment_jobs))
+        self.assertTrue(all(job.preferred_gpu in (None, 0) for job in tasksegment_jobs))
 
     def test_prototype_protocol_is_explicit_in_tasksegment_commands(self) -> None:
         for job in expand_jobs(self.config):
@@ -42,8 +46,8 @@ class PaperLabTests(unittest.TestCase):
                 continue
             command = build_commands(self.config, job).train
             for flag, expected in (
-                ("--prototype-blend-target", "0.9"),
-                ("--prototype-refresh-samples", "128"),
+                ("--prototype-blend-target", "0.0"),
+                ("--prototype-refresh-samples", "4"),
                 ("--prototype-eval-support-samples", "4"),
             ):
                 self.assertIn(flag, command)
@@ -63,21 +67,22 @@ class PaperLabTests(unittest.TestCase):
             names,
             {
                 "tasksegment_full",
-                "tasksegment_no_semantic_text",
-                "tasksegment_no_prototype_bank_blending",
+                "tasksegment_no_text_conditioning",
+                "tasksegment_no_visual_prototype",
                 "tasksegment_no_dense_guidance",
+                "tasksegment_no_task_conditioned_decoder",
             },
         )
         jobs = [
             job
             for job in expand_jobs(self.config)
-            if job.experiment == "tasksegment_no_prototype_bank_blending"
+            if job.experiment == "tasksegment_no_task_conditioned_decoder"
         ]
         self.assertEqual(len(jobs), 3)
         for job in jobs:
             command = build_commands(self.config, job).train
             index = command.index("--ablation")
-            self.assertEqual(command[index + 1], "no_prototype_bank_blending")
+            self.assertEqual(command[index + 1], "no_task_conditioned_decoder")
 
     def test_dashboard_writes_current_and_epoch_events(self) -> None:
         with tempfile.TemporaryDirectory() as temporary:
@@ -168,10 +173,10 @@ class PaperLabTests(unittest.TestCase):
             config_path.write_text(json.dumps(payload), encoding="utf-8")
             config = load_config(config_path)
             plan = create_plan(config)
-            self.assertEqual(set(plan["gpus"]), {0, 1, 2, 4, 5, 6})
+            self.assertEqual(set(plan["gpus"]), {0})
             assigned = [run_id for queue in plan["assignments"].values() for run_id in queue]
-            self.assertEqual(len(assigned), 33)
-            self.assertEqual(len(set(assigned)), 33)
+            self.assertEqual(len(assigned), 36)
+            self.assertEqual(len(set(assigned)), 36)
 
     def test_domain_summary(self) -> None:
         rows = [

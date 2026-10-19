@@ -122,14 +122,14 @@ class DataConfig:
 @dataclass
 class TrainConfig:
     num_epochs: int = 150
-    batch_size: int = 2
+    batch_size: int = 4
     lr: float = 5e-5
     min_lr: float = 1e-6
     weight_decay: float = 1e-4
     patience: int = 20
     episodes_per_epoch: int = 1500
     grad_accum_steps: int = 4
-    warmup_epochs: int = 3
+    warmup_epochs: int = 5
     prototype_blend_target: float = 0.90
     prototype_warmup_epochs: int = 5
     prototype_ramp_epochs: int = 10

@@ -6,8 +6,12 @@ __pycache__/
 .env.*
 venv/
 .venv/
-# data/
-# datasets/
+/data/
+/datasets/
+/text_features_llm/
+/pretrained/
+/work/
+.pytest_cache/
 *.pth
 *.pt
 *.ckpt
@@ -25,6 +29,7 @@ outputs/
 predictions/
 masks/
 paper_artifacts/
+paper_artifacts_kbs/
 paper_figures/
 cache/
 logs/

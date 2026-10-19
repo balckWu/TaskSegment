@@ -1,5 +1,5 @@
 PYTHON ?= python
-CONFIG ?= configs/paper_3seeds.json
+CONFIG ?= configs/kbs_3seeds.json
 
 .PHONY: validate plan launch status dashboard watch collect export stats reset compile test prepare-transunet
 
@@ -10,7 +10,7 @@ plan:
 	$(PYTHON) scripts/paper.py plan --config $(CONFIG) --show-commands
 
 launch:
-	$(PYTHON) scripts/paper.py launch --config $(CONFIG) --fresh
+	$(PYTHON) scripts/paper.py launch --config $(CONFIG)
 
 status:
 	$(PYTHON) scripts/paper.py status --config $(CONFIG)
